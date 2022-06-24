@@ -95,7 +95,7 @@
     <div class="about" id="about">
         <div id="imgContainer">
               <div id="imgLogo">
-                 
+                  <img src="images/about-img.jpg" alt="">
               </div>
         </div>
         <div class="aboutContainer">
@@ -124,12 +124,12 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, commodi!</p>
                     </div>
                 
-               
+                    <div class="read">
+                        <button id="readBtn">Read More</button>
+        
+                    </div>
             </div>
-            <div class="read">
-                <button id="readBtn">Read More</button>
-
-            </div>
+            
             
             
         </div>
@@ -367,15 +367,17 @@
 
     <div class="joining" id="joining">
         <h2><span>Join With Us</span></h2>
+        <div id="success"><strong id="alert">Your Form has been Submitted Successfully</strong><button id="sFBtn">X</button></div>
         <div class="joinContainer">
             <div class="joinImg">
                 <img src="images/joining.jpg" alt="">
             </div>
             <div class="joinForm">
                 <h1>Join<span>Now</span></h1>
+               
                 <div class="formContent">
 
-                    <form action="noaction.php" class="form">
+                    <form action="noaction.php" class="form" id="form">
                         <div class="userName">
                             <input type="text"  id="userName" placeholder="Enter your Name">
                         </div>
@@ -394,7 +396,8 @@
                         <div class="pNo">
                             <input type="text" id="pNo" placeholder="Enter your Phone Number">
                         </div>
-                        <button class="formBtn">Submit</button>
+                        <!-- <button class="formBtn">Submit</button> -->
+                        <a  id="formBtn">Submit</a>
                     </form>
                 </div>
             </div>

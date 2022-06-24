@@ -102,6 +102,10 @@ let userName = document.getElementById("userName");
 let age = document.getElementById("age");
 let pNo = document.getElementById("pNo");
 let email = document.getElementById("email");
+let validUser = false;
+let validAge = false;
+let validPNo = false;
+let validEmail = false;
 
 
 userName.addEventListener("blur",function(){
@@ -110,10 +114,12 @@ userName.addEventListener("blur",function(){
     if(regex.test(string)){
         console.log("it is valid");
         userName.classList.remove("notValid");
+        validUser = true;
     }
     else{
         console.log("it is invalid");
         userName.classList.add("notValid");
+        validUser=false;
 
     }
 });
@@ -123,10 +129,12 @@ age.addEventListener("blur",function(){
     if(regex.test(a)){
         console.log("it is valid");
         age.classList.remove("notValid");
+        validAge=true;
     }
     else{
         console.log("it is invalid");
         age.classList.add("notValid");
+        validAge=false;
     }
 });
 email.addEventListener("blur",function(){
@@ -135,10 +143,12 @@ email.addEventListener("blur",function(){
     if(regex.test(e)){
         console.log("it is valid");
         email.classList.remove("notValid");
+        validEmail = true;
     }
     else{
         console.log("it is invalid");
         email.classList.add("notValid");
+        validEmail=false;
     }
 });
 
@@ -148,9 +158,47 @@ pNo.addEventListener("blur",function(){
     if(regex.test(p)){
         console.log("it is valid");
         pNo.classList.remove("notValid");
+        validPNo=true;
     }
     else{
         console.log("it is invalid");
         pNo.classList.add("notValid");
+        validPNo=false;
     }
+})
+
+let sFBtn = document.getElementById('sFBtn');
+let success = document.getElementById('success');
+
+sFBtn.addEventListener("click",function(){
+    success.style.display="none";
+})
+
+let formBtn = document.getElementById('formBtn');
+let alert = document.getElementById('alert');
+let form = document.getElementById('form');
+
+formBtn.addEventListener("click",function(e){
+    e.preventDefault();
+    if(validPNo && validEmail && validAge && validUser)
+    {
+       
+        success.style.display="flex";
+        form.reset();
+
+    }
+    else{
+       
+            success.style.display="flex";
+            success.style.border = "2px solid red";
+            success.style.backgroundColor = "#fa4b54";
+            success.style.justifyContent="space-between";
+            success.style.alignItems = "center";
+            success.style.marginTop = '0.2rem';
+            success.style.marginBottom = '2rem';
+            success.style.padding ="0.5rem 1rem";
+            success.style.borderRadius = "0.5rem";
+            alert.innerHTML =`Your Form has not been Submitted`;
+    }
+
 })

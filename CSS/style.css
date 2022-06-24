@@ -251,16 +251,20 @@ body {
     
 }
 #imgLogo{
-    display: flex;
-    justify-content: center;
-    width: 65%;
-    height: 78vh;
-    background: url(../images/about-img.jpg)no-repeat;
-    background-position: center;
-    background-size: cover;
+    display:flex;
+    flex: 1;
+    position: relative;
     margin-top: 3rem;
-
-    
+}
+#imgLogo img{
+    width: 85%;
+    object-fit: cover;
+    object-position: center;
+    margin: 1rem auto;
+    cursor: pointer;
+}
+#imgLogo img:hover{
+    transform: scale(1.01);
 }
 #imgLogo::before,
 #imgLogo::after{
@@ -268,18 +272,18 @@ body {
     background-color: red;
     position: absolute;
     z-index: -1;
-    height: 8rem;
-    width: 8rem;
+    height: 9rem;
+    width: 9rem;
 
     
 }
 #imgLogo::before{
-    top: 7%;
-    left: 16%;
+    top: 0%;
+    left: 5%;
 }
 #imgLogo::after{
     bottom: 0%;
-    right: 16%;
+    right: 5%;
 }
 
 
@@ -344,11 +348,6 @@ body {
     color: rgb(90, 90, 90);
     font-weight: 3rem;
 }
-.read{
-    position: relative;
-    bottom: 2vh;
-    
-}
 #readBtn{
     position: relative;
     left: 0;
@@ -382,7 +381,7 @@ body {
     display: flex;
     width: 100%;
     margin: auto;
-    height:46.5rem;
+    /* height:46.5rem; */
     flex-wrap: wrap;
 }
 
@@ -509,6 +508,9 @@ body {
     flex-wrap: wrap;
     
 }
+.pContent1{
+    padding: 0.5rem 0.8rem;
+}
 .pContent2{
     clip-path: polygon(0 0, 100% 0, 100% 75%, 84% 100%, 0 100%, 0% 50%);
     background-color: rgb(36, 35, 35);
@@ -533,6 +535,10 @@ body {
     font-size: 3rem;
     font-weight: bolder;
     
+}
+.pContent2 h2 strong,
+.pContent3 h2 strong{
+    color: white;
 }
 .pContent1 h3{
     color: red;
@@ -666,12 +672,12 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height:30vh;
+    /* height:30vh; */
     margin-bottom: 2rem;
 }
 .joinContent{
     width: 50%;
-    height: 40vh;
+    /* height: 40vh; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -819,9 +825,28 @@ body {
     border-radius: 0.3rem;
     color: red;
     margin-top: 2rem;
-    margin-bottom:2rem;
+    /* margin-bottom:2rem; */
     background-color: black;
 
+}
+#success{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    border: 2px solid green;
+    margin-top:0.2rem;
+    margin-bottom:2rem;
+    color:white;
+    background-color: yellowgreen;
+    padding:0.5rem 1rem;
+    border-radius: 0.5rem;
+    display:none;
+}
+
+#sFBtn{
+    font-size:1rem;
+    padding: 0.2rem 1rem;
+    border-radius: 0.3rem;
 }
 .joining h2 span::before{
     content: "";
@@ -832,6 +857,7 @@ body {
     z-index: -1;
 
 }
+
 .joining .joinContainer{
     display:flex;
     
@@ -910,7 +936,7 @@ body {
     color:white;
     border-radius: 0.8rem;
 }
-.formBtn{
+#formBtn{
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
     background-color:red;
@@ -922,7 +948,7 @@ body {
     cursor: pointer;
 
 }
-.formBtn:hover{
+#formBtn:hover{
     transform:scale(1.1);
 }
 
@@ -1108,6 +1134,1544 @@ body {
 .credit span{
     color:red;
     padding:0 0.2rem;
+}
+
+
+@media screen and (max-width:1580px) {
+
+    /* features */
+
+    .mainBox{
+        display: flex;
+        width: 100%;
+        margin: auto;
+        height:46.5rem;
+        flex-wrap: wrap;
+    }
+
+    .features h2 span{
+        width: 18%;
+        font-size: 1.3rem;
+
+    }
+    .fContainer{
+        display: flex;
+        flex-direction:column;
+        flex:1;
+        background-color: rgb(36, 35, 35);
+        
+    }
+    .fContainer2{
+        display: flex;
+        flex:1;
+        flex-direction: column;
+        flex-direction: column-reverse;
+        background-color: rgb(36, 35, 35);
+        /* border: 2px solid green; */
+    
+
+    }
+
+    .fImage img{
+        width:100%;
+        cursor:pointer;
+        
+    }
+    .fImage img:hover{
+        transform: scale(1.02);
+
+    }
+
+
+    .fContent{
+        padding: 0.5rem 0.5rem;
+        flex:1;
+    
+
+    }
+    .fContent2{
+       padding: 0.5rem 0.5rem;
+        flex:1;
+    }
+    .fContent h3,
+    .fContent2 h3{
+        font-size: 1.2rem;
+        margin-top: 0.3rem;
+    }
+    .fIcon{
+        margin-top: 0.4rem;
+        font-size: 2rem;
+        filter: invert();
+
+        
+    }
+    .fIcon img{
+        font-size: 2rem;
+
+    }
+    .fContent p,
+    .fContent2 p{
+        margin-top: 0.3rem;
+        font-size: 0.9rem;
+    }
+    .fBtn{
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        background-color:red;
+        color:white;
+        padding: 0.5rem 1.4rem;
+        clip-path: polygon(100% 0, 100% 71%, 90% 100%, 0 100%, 0 0);
+        border-radius:0.2rem;
+        font-size: 1.2rem;
+        cursor: pointer;
+    }
+    .fBtn:hover{
+        transform: scale(1.1);
+    }
+    
+}
+
+
+@media screen and (max-width:1200px){
+    /* about  */
+    #imgLogo{
+        margin-right: 1rem;
+        margin-left:0.5rem;
+    }
+
+    #imgLogo img{
+        width: 93%;
+        object-fit: cover;
+        object-position: center;
+        margin: 1rem auto;
+        cursor: pointer;
+    }
+    #imgLogo::before,
+    #imgLogo::after{
+    content: "";
+    background-color: red;
+    position: absolute;
+    z-index: -1;
+    height: 8rem;
+    width: 8rem;
+
+    
+}
+    #imgLogo::before{
+        top: 0%;
+        left: 0%;
+    }
+    #imgLogo::after{
+        bottom: 0%;
+        right: 0%;
+    }
+    .aboutContainer{
+        flex-wrap:wrap ;
+        padding-right: 6rem;
+        margin-top: 3rem;
+        
+    }
+    .writingContent h3{
+        font-size: 1.3rem;
+    }
+    .writingContent h2{
+        font-size: 1.6rem;
+    }
+    .writingContent p{
+       font-size: 1rem;
+        font-weight: 3rem;
+    }
+    .somePoints{
+        display:flex;
+        margin-top: 1.5rem;
+        flex-wrap: wrap;
+        
+    }
+    .pointBox{
+        margin-bottom: 1rem;
+        width: 50%;
+        padding: 0 3rem 0rem 0;
+    
+    }
+    
+    .pointBox h3{
+        font-size: 1.3rem;
+        margin-bottom: 0.3rem;
+    }
+    .pointBox h3 i{
+        margin-right: 0.5rem;
+        font-size:1.2rem;
+    }
+    .pointBox p{
+        font-size: 1rem;
+    }
+    #readBtn{
+        padding: 0.3rem 1rem;
+        font-size: 1rem;
+    }
+
+
+}
+
+@media screen and (max-width:1024px){
+    .content span{
+        font-size:1rem ;
+    }
+    .content h3{
+        font-size:1.5rem ;
+    } 
+
+    /* about  */
+    #imgLogo{
+        margin-right: 1rem;
+        margin-left:0.5rem;
+    }
+
+    #imgLogo img{
+        width: 93%;
+        object-fit: cover;
+        object-position: center;
+        margin: 1rem auto;
+        cursor: pointer;
+    }
+    #imgLogo::before,
+    #imgLogo::after{
+    content: "";
+    background-color: red;
+    position: absolute;
+    z-index: -1;
+    height: 7rem;
+    width: 7rem;
+
+    
+}
+    #imgLogo::before{
+        top: 0%;
+        left: 0%;
+    }
+    #imgLogo::after{
+        bottom: 0%;
+        right: 0%;
+    }
+    .aboutContainer{
+        flex-wrap:wrap ;
+        padding-right: 4rem;
+        margin-top: 3rem;
+        
+    }
+    .writingContent h3{
+        font-size: 1rem;
+    }
+    .writingContent h2{
+        font-size: 1.2rem;
+    }
+    .writingContent p{
+       font-size: 0.8rem;
+        font-weight: 3rem;
+    }
+    .somePoints{
+        display:flex;
+        margin-top: 1.5rem;
+        flex-wrap: wrap;
+        
+    }
+    .pointBox{
+        margin-bottom: 0.8rem;
+        width: 50%;
+        padding: 0 2rem 0rem 0;
+    
+    }
+    
+    .pointBox h3{
+        font-size: 1rem;
+        margin-bottom: 0.3rem;
+    }
+    .pointBox h3 i{
+        margin-right: 0.5rem;
+        font-size:1rem;
+    }
+    .pointBox p{
+        font-size: 0.8rem;
+    }
+    #readBtn{
+        padding: 0.3rem 1rem;
+        font-size: 1rem;
+    }
+
+    /* features */
+
+    .features h2 span{
+        width: 18%;
+        font-size: 1rem;
+
+    }
+    .fContent h3,
+    .fContent2 h3{
+        font-size: 1rem;
+        margin-top: 0.3rem;
+    }
+    .fIcon{
+        margin-top: 0.3rem;
+    }
+    .fContent p,
+    .fContent2 p{
+        font-size: 0.8rem;
+        margin-top: 0.3rem;
+    }
+    .fBtn{
+        padding: 0.3rem 1rem;
+        font-size: 1rem;
+    }
+
+    
+    /* pricing  */
+
+    .pContent2 h3,
+    .pContent3 h3{
+        color: white;
+        font-size: 1.1rem;
+    }
+    .pContent2 h2 span,
+    .pContent3 h2 span{
+        font-size: 2rem;
+        
+    }
+    .pContent1 h1{
+        font-size: 1.5rem;
+    }
+    .pBtn{
+        padding: 0.3rem 1rem;
+        font-size: 1rem;
+       
+    
+    }
+
+    /* trainers  */
+    .trainers h2 span{
+        width: 18%;
+        font-size: 1rem;
+        
+    
+    }
+    .tInfo p{
+        font-size: 0.8rem;
+    
+    }
+    .tInfo h2{
+        font-size: 1.3rem;
+    }
+
+    /* join  */
+
+    .join h3{
+        font-size: 1rem;
+        margin-bottom: 0.3rem;
+    }
+    .join h1{
+        font-size:1.8rem;
+        margin-bottom: 0.3rem;
+    }
+    .join p{
+        font-size:0.8rem;
+        margin-bottom: 0.3rem;
+    }
+    .joinBtn{
+        padding: 0.3rem 1rem;
+        font-size: 1rem;
+    
+    }
+    .joinContent{
+        width: 60%;
+        padding: 0.5rem 1rem;
+    
+    }
+
+    /* testimonials  */
+    .testimonials .testHeading{
+        width: 30%;
+        padding: 0rem 1rem;
+    }
+    .testHeading h3{
+        font-size: 1rem;
+        margin-bottom: 0.3rem;
+    }
+    .testHeading h2{
+        font-size: 1.2rem;
+        margin-bottom: 0.3rem;
+    }
+    .testHeading p{
+        font-size: 0.8rem;
+        margin-bottom: 0.3rem;
+    }
+   
+    .testimonials .testContent{
+        padding: 0.7rem 1rem;
+        margin-left: 1.2rem;
+    }
+    .testProfile img{
+        width:2rem;
+        margin: 0.2rem 0.7rem;
+    }
+    .testContent p{
+        font-size: 0.8rem;
+        color: rgb(153, 149, 149);
+    }
+    .testInfo h2{
+        font-size: 1.2rem;
+    }
+    .testInfo h3{
+        font-size: 0.8rem;
+    }
+    .testBtn{
+        padding: 0.3rem 1rem;
+        font-size: 1rem;
+    
+    }
+
+    /* joining form  */
+    .joining h2 span{
+        width: 18%;
+        font-size: 1rem;
+    
+    }
+    .joining .joinImg{
+        flex: 0.7;
+    
+    }
+    .joinImg::before,
+    .joinImg::after{
+        content: "";
+        background-color: red;
+        position: absolute;
+        z-index: -1;
+        height: 7rem;
+        width: 7rem;
+    }
+    .joinImg::before{
+        top: 1%;
+        left: 2%;
+    }
+    .joinImg::after{
+        bottom: 0.7%;
+        right: 2%;
+    }
+    .joinForm h1,
+    .joinForm span{
+        font-size: 3rem;
+    }
+    
+    .formContent .form input{
+        font-size: 1.2rem;
+        margin-bottom: 0.6rem;
+        padding: 0.5rem 0.5rem;
+    }
+    #formBtn{
+        padding: 0.3rem 1rem;
+        font-size: 1rem;
+       
+    
+    }
+
+    /* blog section  */
+
+.blogs h2 span{
+    width: 18%;
+    font-size: 1rem;
+
+}
+.blogContent{
+    display: flex;
+    flex-direction: column;
+    margin:auto;
+    flex:1;
+    margin-left: 1rem;
+    margin-bottom:1rem;
+    flex-wrap:wrap;
+}
+
+.bInfo{
+    padding:1rem 1rem;
+
+}
+
+.bInfo #bText strong{
+    font-size: 0.8rem;
+    
+}
+.bInfo h2{
+    font-size: 1.2rem;
+    margin-bottom: 0.3rem;
+    margin-top:0.3rem;
+}
+.bInfo p{
+    font-size: 0.8rem;
+    margin-bottom: 0.3rem;
+
+}
+.bBtn{
+    padding: 0.3rem 1rem;
+    font-size: 1rem;
+}
+
+/* footer  */
+
+.footerContent h3{
+    font-size: 1rem;
+    margin-bottom: 0.3rem;
+}
+.footerContent a{
+    font-size:0.8rem;
+    margin-bottom: 0.3rem;
+    
+}
+
+.footerContent p{
+    font-size:0.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.footerContent .share a{
+    padding:0.5rem 0.5rem;
+}
+.footerContent input{
+    padding: 0.3rem 0.5rem;
+    font-size: 0.8rem;
+    margin-bottom: 0.3rem;
+}
+.footerBtn{
+    padding: 0.3rem 1rem;
+    font-size: 1rem;
+}
+
+
+}
+
+@media screen and (max-width:830px){
+    .content span{
+        font-size:0.8rem ;
+    }
+    .content h3{
+        font-size:1rem ;
+    } 
+
+    /* about  */
+    #imgLogo::before,
+    #imgLogo::after{
+    content: "";
+    background-color: red;
+    position: absolute;
+    z-index: -1;
+    height: 6rem;
+    width: 6rem;
+    }  
+    #imgLogo::before{
+        top: 1.2%;
+        left: 0%;
+    }
+    #imgLogo::after{
+        bottom: 1.2%;
+        right: 0%;
+    }
+    #imgLogo{
+        margin-top:2rem;
+    }
+    .aboutContainer{
+        flex-wrap:wrap ;
+        padding-right: 3.3rem;
+        margin-top: 2rem;
+        
+    }
+    .writingContent h3{
+        font-size: 0.8rem;
+    }
+    .writingContent h2{
+        font-size: 1rem;
+    }
+    .writingContent p{
+       font-size: 0.6rem;
+        font-weight: 3rem;
+    }
+    .somePoints{
+        display:flex;
+        margin-top: 1rem;
+        flex-wrap: wrap;
+        
+    }
+    .pointBox{
+        margin-bottom: 0.8rem;
+        width: 50%;
+        padding: 0 1.8rem 0rem 0;
+    
+    }
+    .pContent2 h2 strong,
+    .pContent3 h2 strong{
+       color: white;
+       font-size: 1.5rem;
+    }
+    
+    .pointBox h3{
+        font-size: 0.8rem;
+        margin-bottom: 0.2rem;
+    }
+    .pointBox h3 i{
+        margin-right: 0.5rem;
+        font-size:0.7rem;
+    }
+    .pointBox p{
+        font-size: 0.6rem;
+    }
+    #readBtn{
+        padding: 0.3rem 0.8rem;
+        font-size: 0.8rem;
+    }
+
+    /* features */
+
+    .features h2 span{
+        width: 20%;
+        font-size: 0.8rem;
+
+    }
+    .fContent h3,
+    .fContent2 h3{
+        font-size: 0.8rem;
+        margin-top: 0.2rem;
+    }
+    .fIcon{
+        margin-top: 0.2rem;
+    }
+    .fContent p,
+    .fContent2 p{
+        font-size: 0.6rem;
+        margin-top: 0.2rem;
+    }
+    .fBtn{
+        padding: 0.3rem 0.8rem;
+        font-size: 0.8rem;
+    }
+
+    
+    /* pricing  */
+
+    .pContent2 h3,
+    .pContent3 h3{
+        color: white;
+        font-size: 1rem;
+    }
+    .pContent1 p{
+        font-size: 0.6rem;
+    }
+    .pContent2 p,
+    .pContent3 p{
+        font-size: 0.6rem;
+    }
+    .pContent1 h3{
+        font-size: 0.9rem;
+    }
+    .pContent2 h2 span,
+    .pContent3 h2 span{
+        font-size: 1.9rem;
+        
+    }
+    .pContent1 h1{
+        font-size: 1.2rem;
+    }
+    .pBtn{
+        padding: 0.3rem 0.8rem;
+        font-size: 0.8rem;
+       
+    
+    }
+
+    /* trainers  */
+    .trainers h2 span{
+        width: 20%;
+        font-size: 0.8rem;
+        
+    
+    }
+    .tInfo p{
+        font-size: 0.6rem;
+    
+    }
+    .tInfo h2{
+        font-size: 1rem;
+    }
+
+    /* join  */
+
+    .join h3{
+        font-size: 0.8rem;
+        margin-bottom: 0.2rem;
+    }
+    .join h1{
+        font-size:1.4rem;
+        margin-bottom: 0.2rem;
+    }
+    .join p{
+        font-size:0.6rem;
+        margin-bottom: 0.2rem;
+    }
+    .joinBtn{
+        padding: 0.3rem 0.8rem;
+        font-size: 0.8rem;
+    
+    }
+    .joinContent{
+        width: 60%;
+        padding: 0.3rem 0.8rem;
+    
+    }
+
+    /* testimonials  */
+    .testimonials .testHeading{
+        width: 30%;
+        padding: 0rem 0.8rem;
+    }
+    .testHeading h3{
+        font-size: 0.8rem;
+        margin-bottom: 0.2rem;
+    }
+    .testHeading h2{
+        font-size: 1rem;
+        margin-bottom: 0.2rem;
+    }
+    .testHeading p{
+        font-size: 0.6rem;
+        margin-bottom: 0.2rem;
+    }
+   
+    .testimonials .testContent{
+        padding: 0.5rem 0.8rem;
+        margin-left: 1rem;
+    }
+    .testProfile img{
+        width:1.8rem;
+        margin: 0.2rem 0.3rem 0.2rem 0rem ;
+    }
+    .testContent p{
+        font-size: 0.6rem;
+    }
+    .testInfo h2{
+        font-size: 0.8rem;
+    }
+    .testInfo h3{
+        font-size: 0.6rem;
+    }
+    .testBtn{
+        padding: 0.3rem 0.8rem;
+        font-size: 0.8rem;
+    
+    }
+
+    /* joining form  */
+    .joining h2 span{
+        width: 19%;
+        font-size: 0.8rem;
+    
+    }
+    .joining .joinImg{
+        flex: 0.8;
+    
+    }
+    .joinImg::before,
+    .joinImg::after{
+        content: "";
+        background-color: red;
+        position: absolute;
+        z-index: -1;
+        height: 6rem;
+        width: 6rem;
+    }
+    .joinImg::before{
+        top: 1.4%;
+        left: 2%;
+    }
+    .joinImg::after{
+        bottom: 1%;
+        right: 1%;
+    }
+    .joinForm h1,
+    .joinForm span{
+        font-size: 2.5rem;
+    }
+    
+    .formContent .form input{
+        font-size: 1rem;
+        margin-bottom: 0.4rem;
+        padding: 0.4rem 0.5rem;
+    }
+    #formBtn{
+        padding: 0.3rem 0.8rem;
+        font-size: 0.8rem;
+       
+    
+    }
+
+    /* blog section  */
+
+.blogs h2 span{
+    width: 20%;
+    font-size: 0.8rem;
+
+}
+.blogContent{
+    display: flex;
+    flex-direction: column;
+    margin:auto;
+    flex:1;
+    margin-left: 0.8rem;
+    margin-bottom:1rem;
+    flex-wrap:wrap;
+}
+
+.bInfo{
+    padding:0.8rem 0.8rem;
+
+}
+
+.bInfo #bText strong{
+    font-size: 0.6rem;
+    
+}
+.bInfo h2{
+    font-size: 0.9rem;
+    margin-bottom: 0.2rem;
+    margin-top:0.2rem;
+}
+.bInfo p{
+    font-size: 0.6rem;
+    margin-bottom: 0.2rem;
+
+}
+.bBtn{
+    padding: 0.3rem 0.8rem;
+    font-size: 0.8rem;
+}
+
+/* footer  */
+
+.footerContent h3{
+    font-size: 0.8rem;
+    margin-bottom: 0.2rem;
+}
+.footerContent a{
+    font-size:0.6rem;
+    margin-bottom: 0.2rem;
+    
+}
+
+.footerContent p{
+    font-size:0.6rem;
+    margin-bottom: 0.3rem;
+}
+
+.footerContent .share a{
+    padding:0.2rem 0.2rem;
+}
+.footerContent input{
+    padding: 0.2rem 0.4rem;
+    font-size: 0.6rem;
+    margin-bottom: 0.2rem;
+}
+.footerBtn{
+    padding: 0.3rem 0.8rem;
+    font-size: 0.8rem;
+}
+
+
+}
+
+@media screen and (max-width:650px){
+    .content span{
+        font-size:0.8rem ;
+    }
+    .content h3{
+        font-size:1rem ;
+    } 
+
+    /* about  */
+    #imgLogo::before,
+    #imgLogo::after{
+    content: "";
+    background-color: red;
+    position: absolute;
+    z-index: -1;
+    height: 5rem;
+    width: 5rem;
+
+    
+}
+    #imgLogo::before{
+        top: 2.5%;
+        left: 0%;
+    }
+    #imgLogo::after{
+        bottom: 2.5%;
+        right: 0%;
+    }
+    #imgLogo{
+        margin-top:1.5rem;
+    }
+   
+    .aboutContainer{
+        flex-wrap:wrap ;
+        padding-right: 3rem;
+        margin-top: 1.5rem;
+        
+    }
+    .writingContent h3{
+        font-size: 0.6rem;
+    }
+    .writingContent h2{
+        font-size: 0.8rem;
+    }
+    .writingContent p{
+       font-size: 0.4rem;
+        font-weight: 3rem;
+    }
+    .somePoints{
+        display:flex;
+        margin-top: 0.8rem;
+        flex-wrap: wrap;
+        
+    }
+    .pointBox{
+        margin-bottom: 0.6rem;
+        width: 50%;
+        padding: 0 1.6rem 0rem 0;
+    
+    }
+    
+    .pointBox h3{
+        font-size: 0.6rem;
+        margin-bottom: 0.1rem;
+    }
+    .pointBox h3 i{
+        margin-right: 0.3rem;
+        font-size:0.7rem;
+    }
+    .pointBox p{
+        font-size: 0.4rem;
+    }
+    #readBtn{
+        padding: 0.3rem 0.6rem;
+        font-size: 0.6rem;
+    }
+
+    /* features */
+
+    .features h2 span{
+        width: 20%;
+        font-size: 0.6rem;
+
+    }
+    .fContent h3,
+    .fContent2 h3{
+        font-size: 0.6rem;
+        margin-top: 0.2rem;
+    }
+    .fIcon{
+        margin-top: 0.2rem;
+    }
+    .fContent p,
+    .fContent2 p{
+        font-size: 0.4rem;
+        margin-top: 0.2rem;
+    }
+    .fBtn{
+        padding: 0.3rem 0.6rem;
+        font-size: 0.6rem;
+    }
+
+    
+    /* pricing  */
+
+    .pContent2 h3,
+    .pContent3 h3{
+        color: white;
+        font-size: 0.8rem;
+    }
+    .pContent1 p{
+        font-size: 0.4rem;
+    }
+    .pContent2 h2 strong,
+    .pContent3 h2 strong{
+       color: white;
+       font-size: 1.2rem;
+    }
+    .pContent2 p,
+    .pContent3 p{
+        font-size: 0.4rem;
+    }
+    .pContent1 h3{
+        font-size: 0.7rem;
+    }
+    .pContent2 h2 span,
+    .pContent3 h2 span{
+        font-size: 1.7rem;
+        
+    }
+    .pContent1 h1{
+        font-size: 1rem;
+    }
+    .pBtn{
+        padding: 0.3rem 0.6rem;
+        font-size: 0.6rem;
+       
+    
+    }
+
+    /* trainers  */
+    .trainers h2 span{
+        width: 20%;
+        font-size: 0.6rem;
+        
+    
+    }
+    .tInfo p{
+        font-size: 0.4rem;
+    
+    }
+    .tInfo h2{
+        font-size: 0.8rem;
+    }
+
+    /* join  */
+
+    .join h3{
+        font-size: 0.6rem;
+        margin-bottom: 0.1rem;
+    }
+    .join h1{
+        font-size:1.2rem;
+        margin-bottom: 0.2rem;
+    }
+    .join p{
+        font-size:0.4rem;
+        margin-bottom: 0.1rem;
+    }
+    .joinBtn{
+        padding: 0.3rem 0.6rem;
+        font-size: 0.6rem;
+    
+    }
+    .joinContent{
+        width: 62%;
+        padding: 0.3rem 0.8rem;
+    
+    }
+
+    /* testimonials  */
+    .testimonials .testHeading{
+        width: 30%;
+        padding: 0rem 0.8rem;
+    }
+    .testHeading h3{
+        font-size: 0.6rem;
+        margin-bottom: 0.2rem;
+    }
+    .testHeading h2{
+        font-size: 0.8rem;
+        margin-bottom: 0.2rem;
+    }
+    .testHeading p{
+        font-size: 0.4rem;
+        margin-bottom: 0.1rem;
+    }
+   
+    .testimonials .testContent{
+        padding: 0.3rem 0.6rem;
+        margin-left: 0.8rem;
+    }
+    .testProfile img{
+        width:1.6rem;
+        margin: 0.1rem 0.2rem 0.1rem 0rem ;
+    }
+    .testContent p{
+        font-size: 0.4rem;
+    }
+    .testInfo h2{
+        font-size: 0.6rem;
+    }
+    .testInfo h3{
+        font-size: 0.4rem;
+    }
+    .testBtn{
+        padding: 0.3rem 0.6rem;
+        font-size: 0.6rem;
+    
+    }
+
+    /* joining form  */
+    .joining h2 span{
+        width: 19%;
+        font-size: 0.7rem;
+    
+    }
+    .joining .joinImg{
+        flex: 0.9;
+    
+    }
+    .joinImg::before,
+    .joinImg::after{
+        content: "";
+        background-color: red;
+        position: absolute;
+        z-index: -1;
+        height: 5rem;
+        width: 5rem;
+    }
+    .joinImg::before{
+        top: 2%;
+        left: 2%;
+    }
+    .joinImg::after{
+        bottom: 1.6%;
+        right: 1%;
+    }
+    .joinForm h1,
+    .joinForm span{
+        font-size: 2rem;
+    }
+    
+    .formContent .form input{
+        font-size: 0.8rem;
+        margin-bottom: 0.3rem;
+        padding: 0.3rem 0.4rem;
+    }
+    #formBtn{
+        padding: 0.3rem 0.6rem;
+        font-size: 0.6rem;
+       
+    
+    }
+
+    /* blog section  */
+
+.blogs h2 span{
+    width: 20%;
+    font-size: 0.7rem;
+
+}
+.blogContent{
+    display: flex;
+    flex-direction: column;
+    margin:auto;
+    flex:1;
+    margin-left: 0.6rem;
+    margin-bottom:1rem;
+    flex-wrap:wrap;
+}
+
+.bInfo{
+    padding:0.6rem 0.6rem;
+
+}
+
+.bInfo #bText strong{
+    font-size: 0.4rem;
+    
+}
+.bInfo h2{
+    font-size: 0.7rem;
+    margin-bottom: 0.2rem;
+    margin-top:0.2rem;
+}
+.bInfo p{
+    font-size: 0.4rem;
+    margin-bottom: 0.1rem;
+
+}
+.bBtn{
+    padding: 0.3rem 0.6rem;
+    font-size: 0.6rem;
+}
+
+/* footer  */
+.footer{
+    margin-top: 2rem;
+    padding-top: 1rem;
+}
+
+.footerContent h3{
+    font-size: 0.6rem;
+    margin-bottom: 0.2rem;
+}
+.footerContent a{
+    font-size:0.4rem;
+    margin-bottom: 0.2rem;
+    
+}
+
+.footerContent p{
+    font-size:0.4rem;
+    margin-bottom: 0.2rem;
+}
+
+.footerContent .share a{
+    padding:0.2rem 0.2rem;
+}
+.footerContent input{
+    padding: 0.1rem 0.3rem;
+    font-size: 0.4rem;
+    margin-bottom: 0.2rem;
+}
+.footerBtn{
+    padding: 0.3rem 0.6rem;
+    font-size: 0.6rem;
+}
+.credit{
+    margin-top:2.5rem;
+    font-size:0.6rem;
+}
+
+}
+
+@media screen and (max-width:450px){
+    .content span{
+        font-size:0.6rem ;
+    }
+    .content h3{
+        font-size:0.8rem ;
+    } 
+
+    /* about  */
+    #imgLogo::before,
+    #imgLogo::after{
+    content: "";
+    background-color: red;
+    position: absolute;
+    z-index: -1;
+    height: 3rem;
+    width: 3rem;
+
+    
+}
+
+    #imgLogo::before{
+        top: 4.5%;
+        left: 0%;
+    }
+    #imgLogo::after{
+        bottom: 4.5%;
+        right: 0%;
+    }
+    .aboutContainer{
+        flex-wrap:wrap ;
+        padding-right: 3rem;
+        margin-top: 1rem;
+        
+    }
+    .writingContent h3{
+        font-size: 0.4rem;
+    }
+    .writingContent h2{
+        font-size: 0.6rem;
+    }
+    .writingContent p{
+       font-size: 0.2rem;
+    }
+    .somePoints{
+        margin-top: 0.6rem;
+        
+    }
+    .pointBox{
+        margin-bottom: 0.5rem;
+        width: 50%;
+        padding: 0 1.4rem 0rem 0;
+    
+    }
+    
+    .pointBox h3{
+        font-size: 0.4rem;
+        margin-bottom: 0.1rem;
+    }
+    .pointBox h3 i{
+        margin-right: 0.3rem;
+        font-size:0.3rem;
+    }
+    .pointBox p{
+        font-size: 0.2rem;
+    }
+    #readBtn{
+        padding: 0.2rem 0.4rem;
+        font-size: 0.4rem;
+    }
+
+    /* features */
+
+    .features h2 span{
+        width: 21%;
+        font-size: 0.4rem;
+
+    }
+    .fContent h3,
+    .fContent2 h3{
+        font-size: 0.4rem;
+        margin-top: 0.1rem;
+    }
+    .fIcon{
+        margin-top: 0.1rem;
+
+    }
+    .fIcon img{
+        width: 50%;
+    }
+    .fContent p,
+    .fContent2 p{
+        font-size: 0.2rem;
+        margin-top: 0.1rem;
+    }
+    .fBtn{
+        padding: 0.2rem 0.4rem;
+        font-size: 0.4rem;
+    }
+    
+    /* pricing  */
+
+    .pContent2 h3,
+    .pContent3 h3{
+        color: white;
+        font-size: 0.6rem;
+    }
+    .pContent1 p{
+        font-size: 0.2rem;
+    }
+    .pContent2 p,
+    .pContent3 p{
+        font-size: 0.2rem;
+    }
+    .pContent1 h3{
+        font-size: 0.5rem;
+    }
+    .pContent2 h2 span,
+    .pContent3 h2 span{
+        font-size: 1.7rem;
+        
+    }
+
+    .pContent2 h2 strong,
+    .pContent3 h2 strong{
+       color: white;
+       font-size: 1rem;
+    }
+    .pContent1 h1{
+        font-size: 0.8rem;
+    }
+    .pBtn{
+        padding: 0.2rem 0.4rem;
+        font-size: 0.4rem;
+       
+    
+    }
+
+    /* trainers  */
+    .trainers h2 span{
+        width: 21%;
+        font-size: 0.4rem;
+        
+    
+    }
+    .tInfo p{
+        font-size: 0.2rem;
+    
+    }
+    .tInfo h2{
+        font-size: 0.6rem;
+    }
+
+    /* join  */
+
+    .join h3{
+        font-size: 0.4rem;
+        margin-bottom: 0.1rem;
+    }
+    .join h1{
+        font-size:1rem;
+        margin-bottom: 0.1rem;
+    }
+    .join p{
+        font-size:0.3rem;
+        margin-bottom: 0.1rem;
+    }
+    .joinBtn{
+        padding: 0.2rem 0.4rem;
+        font-size: 0.4rem;
+    
+    }
+    .joinContent{
+        width: 64%;
+        padding: 0.2rem 0.7rem;
+    
+    }
+
+    /* testimonials  */
+    .testimonials .testHeading{
+        width: 30%;
+        padding: 0rem 0.6rem;
+    }
+    .testHeading h3{
+        font-size: 0.4rem;
+        margin-bottom: 0.1rem;
+    }
+    .testHeading h2{
+        font-size: 0.8rem;
+        margin-bottom: 0.1rem;
+    }
+    .testHeading p{
+        font-size: 0.2rem;
+        margin-bottom: 0.1rem;
+    }
+   
+    .testimonials .testContent{
+        padding: 0.2rem 0.4rem;
+        margin-left: 0.6rem;
+    }
+    .testProfile img{
+        width:1.1rem;
+        margin: 0.1rem 0.1rem 0.1rem 0rem ;
+    }
+    .testContent p{
+        font-size: 0.2rem;
+    }
+    .testInfo h2{
+        font-size: 0.4rem;
+    }
+    .testInfo h3{
+        font-size: 0.2rem;
+    }
+    .testBtn{
+        padding: 0.2rem 0.4rem;
+        font-size: 0.4rem;
+    
+    }
+
+    /* joining form  */
+    .joining h2 span{
+        width: 21%;
+        font-size: 0.4rem;
+    
+    }
+    .joining .joinImg{
+        flex: 1;
+    
+    }
+    .joinImg::before,
+    .joinImg::after{
+        content: "";
+        background-color: red;
+        position: absolute;
+        z-index: -1;
+        height: 4rem;
+        width: 4rem;
+    }
+    .joinImg::before{
+        top: 4%;
+        left: 1%;
+    }
+    .joinImg::after{
+        bottom: 4%;
+        right: 0.2%;
+    }
+    .joinForm h1,
+    .joinForm span{
+        font-size: 1.8rem;
+    }
+    
+    .formContent .form input{
+        font-size: 0.6rem;
+        margin-bottom: 0.2rem;
+        padding: 0.2rem 0.3rem;
+    }
+    #formBtn{
+        padding: 0.2rem 0.4rem;
+        font-size: 0.4rem;
+       
+    
+    }
+
+    /* blog section  */
+
+.blogs h2 span{
+    width: 21%;
+    font-size: 0.4rem;
+
+}
+.blogContent{
+    display: flex;
+    flex-direction: column;
+    margin:auto;
+    flex:1;
+    margin-left: 0.4rem;
+    margin-bottom:1rem;
+    flex-wrap:wrap;
+}
+
+.bInfo{
+    padding:0.4rem 0.4rem;
+
+}
+
+.bInfo #bText strong{
+    font-size: 0.2rem;
+    margin-bottom: 0.1rem;
+}
+.bInfo h2{
+    font-size: 0.4rem;
+    margin-bottom: 0.1rem;
+    margin-top:0.1rem;
+}
+.bInfo p{
+    font-size: 0.2rem;
+    margin-bottom: 0.1rem;
+
+}
+.bBtn{
+    padding: 0.2rem 0.4rem;
+    font-size: 0.4rem;
+}
+
+/* footer  */
+
+.footer{
+    margin-top: 2rem;
+    padding-top: 0rem;
+}
+
+.footerContent h3{
+    font-size: 0.4rem;
+    margin-bottom: 0.1rem;
+}
+.footerContent a{
+    font-size:0.2rem;
+    margin-bottom: 0.1rem;
+    
+}
+
+.footerContent p{
+    font-size:0.2rem;
+    margin-bottom: 0.1rem;
+}
+
+.footerContent .share a{
+    padding:0.2rem 0.2rem;
+}
+.footerContent input{
+    padding: 0.1rem 0.2rem;
+    font-size: 0.3rem;
+    margin-bottom: 0.1rem;
+}
+.footerBtn{
+    padding: 0.2rem 0.4rem;
+    font-size: 0.4rem;
+}
+.credit{
+    margin-top:1.5rem;
+    font-size: 0.4rem;
+}
+
+
 }
 
 
