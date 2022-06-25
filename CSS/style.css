@@ -244,15 +244,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 45%;
     padding: 1rem 1rem;
-    flex: 1;
-    flex-wrap:wrap ;
-    
+    /* margin:1rem 1rem;  */
 }
 #imgLogo{
     display:flex;
-    flex: 1;
     position: relative;
     margin-top: 3rem;
 }
@@ -289,14 +286,15 @@ body {
 
 .aboutContainer{
     display: flex;
-    flex: 1;
     width: 50%;
+    max-width: 1024px;
     flex-direction: column;
     justify-content: center;
     flex-wrap:wrap ;
     padding-right: 7rem;
     margin-top: 2rem;
-    
+    align-items: center;
+    /* margin:1rem 1rem; */
 }
 .writingContent{
     display: flex;
@@ -375,13 +373,12 @@ body {
     flex-wrap: wrap;
     width: 90%;
     margin: auto;
-    position: relative;
 }
 .mainBox{
     display: flex;
     width: 100%;
-    margin: auto;
-    /* height:46.5rem; */
+    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
@@ -397,37 +394,40 @@ body {
     border-radius: 0.3rem;
     color: red;
     margin-top: 2rem;
+    margin-bottom: 2rem;
     background-color: black;
+
 
 }
 .features h2 span::before{
     content: "";
     position: absolute;
     background:rgb(59, 59, 59);
-    width: 100%;
+    width: 90%;
     height:0.1rem;
     z-index: -1;
 
 }
-.fContainer{
+.fContainer,
+.fContainer3{
     display: flex;
+    /* width: 33.33%; */
+    width: 410px;
     flex-direction:column;
-    flex:1;
     background-color: rgb(36, 35, 35);
     
 }
 .fContainer2{
     display: flex;
-    flex:1;
+    /* width: 33.33%; */
+    width: 410px;
     flex-direction: column;
     flex-direction: column-reverse;
     background-color: rgb(36, 35, 35);
-    /* border: 2px solid green; */
- 
-
 }
 
-.fImage img{
+.fImage img,
+.fImage3 img{
     width:100%;
     cursor:pointer;
     
@@ -438,25 +438,27 @@ body {
 }
 
 
-.fContent{
+.fContent,
+.fContent3{
     display: flex;
+    width:90%;
+    margin: auto;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     text-align:center;
-    flex:1;
-   
-
+    padding: 1rem 1rem;
 }
 .fContent2{
     display: flex;
+    width: 90%;
+    margin: auto;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     text-align:center;
-    flex:1;
+    padding: 1rem 1rem;
 }
 .fContent h3,
+.fContent3 h3,
 .fContent2 h3{
     color: red;
     margin-top: 0.5rem;
@@ -468,6 +470,7 @@ body {
     
 }
 .fContent p,
+.fContent3 p,
 .fContent2 p{
     margin-top: 0.5rem;
     color: rgb(153, 149, 149);
@@ -498,13 +501,17 @@ body {
     margin-bottom: 2rem;
 
 }
+.pContent1{
+    align-items: flex-start;
+
+}
 .pContent1,
 .pContent2,
 .pContent3{
     display: flex;
     flex-direction: column;
-    flex: 1;
-    align-items: flex-start;
+    width:300px;
+    margin:1rem 1rem;
     flex-wrap: wrap;
     
 }
@@ -582,7 +589,7 @@ body {
 .trainers{
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     width: 90%;
     margin: auto;
     position: relative;
@@ -600,6 +607,7 @@ body {
     border-radius: 0.3rem;
     color: red;
     margin-top: 2rem;
+    margin-bottom: 2rem;
     background-color: black;
 
 }
@@ -614,18 +622,16 @@ body {
 }
 .tContentContainer{
     display: flex;
+    justify-content:center ;
     width:100%;
-    margin: auto;
     flex-wrap: wrap;
-    
 }
 .tContent{
     display: flex;
     flex-direction: column;
     margin:auto;
-    flex:1;
-    margin-left: 1rem;
-    margin-bottom:1rem;
+    width: 300px;
+    margin: 1rem 0.5rem;
     flex-wrap:wrap;
     
     
@@ -654,17 +660,6 @@ body {
 
 /* join */
 
-/* .join::before{
-    content: "";
-    background: url('../images/banner-bg.jpg')no-repeat center center/cover;
-    position: absolute;
-    top:0px;
-    left:0px;
-    height: 33%;
-    width:100%;
-    z-index: -1;
-    opacity: 0.90;
-} */
 .join{
     display: flex;
     background: url('../images/banner-bg.jpg')no-repeat center center/cover;
@@ -672,12 +667,10 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
-    /* height:30vh; */
     margin-bottom: 2rem;
 }
 .joinContent{
     width: 50%;
-    /* height: 40vh; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -731,6 +724,7 @@ body {
     width: 30%;
     align-items:flex-start;
     padding: 0rem 2rem;
+    background-color: blue;
 }
 .testHeading h3{
     color: red;
@@ -748,26 +742,20 @@ body {
 .testSlider{
     display: flex;
     align-items: center;
-    /* position: absolute; */
-    /* position:relative; */
-    /* top: 1%; */
-    /* left: 30%; */
     width:70%;
-    /* flex: 1; */
-    /* background-color: blue; */
+    justify-content:center ;
     overflow-x: hidden;
+    flex-wrap:wrap;
+    background-color: chartreuse;
 }
 .testimonials .testContent{
     display: flex;
     flex-direction: column;
-    /* position:relative; */
-    width: 30%;
+    width: 250px;
+    margin: 1rem 1rem;
     clip-path: polygon(100% 0, 100% 71%, 90% 100%, 0 100%, 0 0);
     background-color: rgb(36, 35, 35);
     padding: 1rem 2rem;
-    margin-left: 2rem;
-    /* height: 19vh; */
-
 }
 .testProfile{
     display:flex;
@@ -812,6 +800,7 @@ body {
     width: 90%;
     margin: auto;
     margin-bottom:2rem;
+
     
 }
 .joining h2 span{
@@ -860,12 +849,14 @@ body {
 
 .joining .joinContainer{
     display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
     
     /* background-color: cadetblue; */
 }
 .joining .joinImg{
     display:flex;
-    flex: 0.6;
+    width: 50%;
     position: relative;
 
    
@@ -993,19 +984,16 @@ body {
 .blogContentContainer{
     display: flex;
     width:100%;
-    margin: auto;
+    justify-content: center;
     flex-wrap: wrap;
     
 }
 .blogContent{
     display: flex;
     flex-direction: column;
-    /* margin:auto; */
-    /* flex:1; */
-    width:32%;
+    width:400px;
     background-color: rgb(36, 35, 35);
-    margin-left: 1rem;
-    margin-bottom:1rem;
+    margin: 0.5rem 0.5rem;
     flex-wrap:wrap;
 }
 .blogContent .bImg img{
@@ -1059,14 +1047,18 @@ body {
 .footer{
     display: flex;
     width: 100%;
+    justify-content: center;
+    align-items: center;
     margin: auto;
     margin-top: 3rem;
     padding-top: 3rem;
+    flex-wrap:wrap;
 }
 .footerContent{
     display: flex;
     flex-direction: column;
-    flex:1;
+    width: 400px;
+    margin-bottom: 1rem;
     /* background-color: royalblue; */
 }
 
@@ -1137,99 +1129,163 @@ body {
 }
 
 
-@media screen and (max-width:1580px) {
+/* media query */
 
-    /* features */
 
-    .mainBox{
-        display: flex;
-        width: 100%;
-        margin: auto;
-        height:46.5rem;
-        flex-wrap: wrap;
-    }
+@media screen and (max-width:910px){
 
-    .features h2 span{
-        width: 18%;
-        font-size: 1.3rem;
 
-    }
-    .fContainer{
-        display: flex;
-        flex-direction:column;
-        flex:1;
-        background-color: rgb(36, 35, 35);
-        
-    }
     .fContainer2{
-        display: flex;
-        flex:1;
         flex-direction: column;
-        flex-direction: column-reverse;
-        background-color: rgb(36, 35, 35);
-        /* border: 2px solid green; */
+    }
+    .joinContent{
+        width: 65%;
+        padding: 0.5rem 1rem;
     
-
-    }
-
-    .fImage img{
-        width:100%;
-        cursor:pointer;
-        
-    }
-    .fImage img:hover{
-        transform: scale(1.02);
-
     }
 
 
-    .fContent{
-        padding: 0.5rem 0.5rem;
-        flex:1;
-    
+}
 
-    }
-    .fContent2{
-       padding: 0.5rem 0.5rem;
-        flex:1;
-    }
-    .fContent h3,
-    .fContent2 h3{
-        font-size: 1.2rem;
-        margin-top: 0.3rem;
-    }
-    .fIcon{
-        margin-top: 0.4rem;
-        font-size: 2rem;
-        filter: invert();
 
-        
-    }
-    .fIcon img{
-        font-size: 2rem;
+@media screen and (max-width:1280px){
 
-    }
-    .fContent p,
-    .fContent2 p{
-        margin-top: 0.3rem;
-        font-size: 0.9rem;
-    }
-    .fBtn{
-        margin-top: 0.5rem;
-        margin-bottom: 0.5rem;
-        background-color:red;
+
+    /* home section  */
+
+    .content h3{
+        font-size:1.5rem ;
         color:white;
-        padding: 0.5rem 1.4rem;
-        clip-path: polygon(100% 0, 100% 71%, 90% 100%, 0 100%, 0 0);
-        border-radius:0.2rem;
+        margin-bottom:0.5rem;
+    } 
+    .content .btn{
+        padding: 0.7rem 1rem;
+        font-size: 1rem;
+    
+    }
+
+
+
+    /* about-section */
+
+    #imgContainer{
+        width: 90%;
+        margin:auto;
+        
+    }
+
+
+    .aboutContainer{
+        width: 90%;
+        flex-wrap:wrap ;
+        padding-right: 2rem;
+        margin-top: 2rem;
+        margin: auto;
+    }
+    .writingContent h3{
+        font-size: 1.5rem;
+        font-weight: 2rem;
+    }
+    .writingContent h2{
+        font-size: 3rem;
+        font-weight: 2rem;
+    }
+    .writingContent p{
+        color: rgb(90, 90, 90);
+        font-weight: 3rem;
+    }
+    .pointBox{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2rem;
+        text-align: justify;
+        width: 50%;
+        padding: 0 4rem 0rem 0;
+
+    }
+
+    .pointBox h3{
+        margin-bottom: 4px;
+    }
+    .pointBox h3 i{
+        color: red;
+        margin-right: 1rem;
+    }
+    .pointBox p{
+        color: rgb(90, 90, 90);
+        font-weight: 3rem;
+    }
+    #readBtn{
+        padding: 0.8rem 1rem;
+        font-size: 1rem;
+
+    }
+
+}
+@media screen and (max-width:1344px){
+    .testimonials .testHeading{
+        width: 40%;
+        justify-content: center;
+    }
+
+    /* joining form  */
+
+    .joining h2 span{
+        width: 12%;
+        padding: 0.5rem 0.5rem;
         font-size: 1.2rem;
-        cursor: pointer;
+    
     }
-    .fBtn:hover{
-        transform: scale(1.1);
+    /* footer  */
+    .footer{
+        justify-content: space-around;
     }
+    .footerContent input{
+        padding: 0.3rem 0.1rem;
+        width: 50%;
+        font-size: 1rem;
+        background-color: rgb(36, 35, 35);
+        color:white;
+        margin-bottom: 0.5rem;
+    }
+
     
 }
+@media screen and (max-width:1370px){
+
+    .trainers h2 span{
+        width: 17%;
+        padding: 0.5rem 0.5rem;
+        font-size: 1rem;
+    
+    }
+    .features h2 span{
+        width: 15%;
+        padding: 0.5rem 0.5rem;
+        font-size: 1rem;
+    
+    }
+    .blogs h2 span{
+        width: 15%;
+        padding: 0.5rem 0.5rem;
+        font-size: 1rem;
+    
+    }
+
+}
+
+
+@media screen and (max-width:1715px) {
+    /* pricing */
+    .pricing{
+        justify-content: space-around;
+    }
+    
+    
+    
+}
+
+
 
 
 @media screen and (max-width:1200px){
@@ -1240,7 +1296,7 @@ body {
     }
 
     #imgLogo img{
-        width: 93%;
+        width: 80%;
         object-fit: cover;
         object-position: center;
         margin: 1rem auto;
@@ -1259,11 +1315,11 @@ body {
 }
     #imgLogo::before{
         top: 0%;
-        left: 0%;
+        left: 7%;
     }
     #imgLogo::after{
         bottom: 0%;
-        right: 0%;
+        right: 7%;
     }
     .aboutContainer{
         flex-wrap:wrap ;
@@ -1313,27 +1369,90 @@ body {
 
 }
 
-@media screen and (max-width:1024px){
-    .content span{
-        font-size:1rem ;
+@media screen and (max-width:1140px){
+    /* joining form  */
+
+    .joining h2 span{
+        width: 15%;
+        padding: 0.5rem 0.5rem;
+        font-size: 1rem;
+    
     }
-    .content h3{
-        font-size:1.5rem ;
+    .blogs h2 span{
+        width: 15%;
+        padding: 0.5rem 0.5rem;
+        font-size: 1rem;
+    
+    }
+    
+    .features h2 span{
+        width: 15%;
+        padding: 0.5rem 0.5rem;
+        font-size: 1rem;
+    
+    }
+
+    
+}
+
+@media screen and (max-width:900px){
+    /* joining form  */
+    .formContent .form input{
+        font-size: 1.1rem;
+        margin-bottom: 0.6rem;
+        padding: 0.7rem 0.7rem;
+    }
+    #formBtn{
+        padding: 0.4rem 1rem;
+        font-size: 1rem;
+
     } 
 
-    /* about  */
-    #imgLogo{
-        margin-right: 1rem;
-        margin-left:0.5rem;
+    
+}
+
+@media screen and (max-width:930px){
+
+    .trainers h2 span{
+        width: 20%;
+        padding: 0.5rem 0.5rem;
+        font-size: 0.9rem;
+    
+    }
+    .blogs h2 span{
+        width: 20%;
+        padding: 0.5rem 0.5rem;
+        font-size: 0.9rem;
+    
+    }
+    .features h2 span{
+        width: 20%;
+        padding: 0.5rem 0.5;
+        font-size: 1rem;
+    
     }
 
-    #imgLogo img{
-        width: 93%;
-        object-fit: cover;
-        object-position: center;
-        margin: 1rem auto;
-        cursor: pointer;
+}
+
+@media screen and (max-width:850px){
+    /* home section  */
+    .content span{
+        font-size:1rem ;
+        margin-bottom:0.5rem;
+        
     }
+
+    .content h3{
+        font-size:1.2rem ;
+        color:white;
+        margin-bottom:0.5rem;
+    } 
+    .content .btn{
+        padding: 0.6rem 0.8rem;
+        font-size: 0.8rem;
+    
+    }
+
     #imgLogo::before,
     #imgLogo::after{
     content: "";
@@ -1342,1337 +1461,17 @@ body {
     z-index: -1;
     height: 7rem;
     width: 7rem;
-
-    
-}
-    #imgLogo::before{
-        top: 0%;
-        left: 0%;
-    }
-    #imgLogo::after{
-        bottom: 0%;
-        right: 0%;
-    }
-    .aboutContainer{
-        flex-wrap:wrap ;
-        padding-right: 4rem;
-        margin-top: 3rem;
-        
-    }
-    .writingContent h3{
-        font-size: 1rem;
-    }
-    .writingContent h2{
-        font-size: 1.2rem;
-    }
-    .writingContent p{
-       font-size: 0.8rem;
-        font-weight: 3rem;
-    }
-    .somePoints{
-        display:flex;
-        margin-top: 1.5rem;
-        flex-wrap: wrap;
-        
-    }
-    .pointBox{
-        margin-bottom: 0.8rem;
-        width: 50%;
-        padding: 0 2rem 0rem 0;
-    
-    }
-    
-    .pointBox h3{
-        font-size: 1rem;
-        margin-bottom: 0.3rem;
-    }
-    .pointBox h3 i{
-        margin-right: 0.5rem;
-        font-size:1rem;
-    }
-    .pointBox p{
-        font-size: 0.8rem;
-    }
-    #readBtn{
-        padding: 0.3rem 1rem;
-        font-size: 1rem;
     }
 
-    /* features */
+    /* .testimonials  */
 
-    .features h2 span{
-        width: 18%;
-        font-size: 1rem;
-
-    }
-    .fContent h3,
-    .fContent2 h3{
-        font-size: 1rem;
-        margin-top: 0.3rem;
-    }
-    .fIcon{
-        margin-top: 0.3rem;
-    }
-    .fContent p,
-    .fContent2 p{
-        font-size: 0.8rem;
-        margin-top: 0.3rem;
-    }
-    .fBtn{
-        padding: 0.3rem 1rem;
-        font-size: 1rem;
-    }
-
-    
-    /* pricing  */
-
-    .pContent2 h3,
-    .pContent3 h3{
-        color: white;
-        font-size: 1.1rem;
-    }
-    .pContent2 h2 span,
-    .pContent3 h2 span{
-        font-size: 2rem;
-        
-    }
-    .pContent1 h1{
-        font-size: 1.5rem;
-    }
-    .pBtn{
-        padding: 0.3rem 1rem;
-        font-size: 1rem;
-       
-    
-    }
-
-    /* trainers  */
-    .trainers h2 span{
-        width: 18%;
-        font-size: 1rem;
-        
-    
-    }
-    .tInfo p{
-        font-size: 0.8rem;
-    
-    }
-    .tInfo h2{
-        font-size: 1.3rem;
-    }
-
-    /* join  */
-
-    .join h3{
-        font-size: 1rem;
-        margin-bottom: 0.3rem;
-    }
-    .join h1{
-        font-size:1.8rem;
-        margin-bottom: 0.3rem;
-    }
-    .join p{
-        font-size:0.8rem;
-        margin-bottom: 0.3rem;
-    }
-    .joinBtn{
-        padding: 0.3rem 1rem;
-        font-size: 1rem;
-    
-    }
-    .joinContent{
+    .testimonials .testHeading{
         width: 60%;
-        padding: 0.5rem 1rem;
-    
+        justify-content: center;
     }
-
-    /* testimonials  */
-    .testimonials .testHeading{
-        width: 30%;
-        padding: 0rem 1rem;
-    }
-    .testHeading h3{
-        font-size: 1rem;
-        margin-bottom: 0.3rem;
-    }
-    .testHeading h2{
-        font-size: 1.2rem;
-        margin-bottom: 0.3rem;
-    }
-    .testHeading p{
-        font-size: 0.8rem;
-        margin-bottom: 0.3rem;
-    }
-   
-    .testimonials .testContent{
-        padding: 0.7rem 1rem;
-        margin-left: 1.2rem;
-    }
-    .testProfile img{
-        width:2rem;
-        margin: 0.2rem 0.7rem;
-    }
-    .testContent p{
-        font-size: 0.8rem;
-        color: rgb(153, 149, 149);
-    }
-    .testInfo h2{
-        font-size: 1.2rem;
-    }
-    .testInfo h3{
-        font-size: 0.8rem;
-    }
-    .testBtn{
-        padding: 0.3rem 1rem;
-        font-size: 1rem;
-    
-    }
-
-    /* joining form  */
-    .joining h2 span{
-        width: 18%;
-        font-size: 1rem;
-    
-    }
-    .joining .joinImg{
-        flex: 0.7;
-    
-    }
-    .joinImg::before,
-    .joinImg::after{
-        content: "";
-        background-color: red;
-        position: absolute;
-        z-index: -1;
-        height: 7rem;
-        width: 7rem;
-    }
-    .joinImg::before{
-        top: 1%;
-        left: 2%;
-    }
-    .joinImg::after{
-        bottom: 0.7%;
-        right: 2%;
-    }
-    .joinForm h1,
-    .joinForm span{
-        font-size: 3rem;
-    }
-    
-    .formContent .form input{
-        font-size: 1.2rem;
-        margin-bottom: 0.6rem;
-        padding: 0.5rem 0.5rem;
-    }
-    #formBtn{
-        padding: 0.3rem 1rem;
-        font-size: 1rem;
-       
-    
-    }
-
-    /* blog section  */
-
-.blogs h2 span{
-    width: 18%;
-    font-size: 1rem;
-
-}
-.blogContent{
-    display: flex;
-    flex-direction: column;
-    margin:auto;
-    flex:1;
-    margin-left: 1rem;
-    margin-bottom:1rem;
-    flex-wrap:wrap;
-}
-
-.bInfo{
-    padding:1rem 1rem;
 
 }
 
-.bInfo #bText strong{
-    font-size: 0.8rem;
-    
-}
-.bInfo h2{
-    font-size: 1.2rem;
-    margin-bottom: 0.3rem;
-    margin-top:0.3rem;
-}
-.bInfo p{
-    font-size: 0.8rem;
-    margin-bottom: 0.3rem;
-
-}
-.bBtn{
-    padding: 0.3rem 1rem;
-    font-size: 1rem;
-}
-
-/* footer  */
-
-.footerContent h3{
-    font-size: 1rem;
-    margin-bottom: 0.3rem;
-}
-.footerContent a{
-    font-size:0.8rem;
-    margin-bottom: 0.3rem;
-    
-}
-
-.footerContent p{
-    font-size:0.8rem;
-    margin-bottom: 0.5rem;
-}
-
-.footerContent .share a{
-    padding:0.5rem 0.5rem;
-}
-.footerContent input{
-    padding: 0.3rem 0.5rem;
-    font-size: 0.8rem;
-    margin-bottom: 0.3rem;
-}
-.footerBtn{
-    padding: 0.3rem 1rem;
-    font-size: 1rem;
-}
-
-
-}
-
-@media screen and (max-width:830px){
-    .content span{
-        font-size:0.8rem ;
-    }
-    .content h3{
-        font-size:1rem ;
-    } 
-
-    /* about  */
-    #imgLogo::before,
-    #imgLogo::after{
-    content: "";
-    background-color: red;
-    position: absolute;
-    z-index: -1;
-    height: 6rem;
-    width: 6rem;
-    }  
-    #imgLogo::before{
-        top: 1.2%;
-        left: 0%;
-    }
-    #imgLogo::after{
-        bottom: 1.2%;
-        right: 0%;
-    }
-    #imgLogo{
-        margin-top:2rem;
-    }
-    .aboutContainer{
-        flex-wrap:wrap ;
-        padding-right: 3.3rem;
-        margin-top: 2rem;
-        
-    }
-    .writingContent h3{
-        font-size: 0.8rem;
-    }
-    .writingContent h2{
-        font-size: 1rem;
-    }
-    .writingContent p{
-       font-size: 0.6rem;
-        font-weight: 3rem;
-    }
-    .somePoints{
-        display:flex;
-        margin-top: 1rem;
-        flex-wrap: wrap;
-        
-    }
-    .pointBox{
-        margin-bottom: 0.8rem;
-        width: 50%;
-        padding: 0 1.8rem 0rem 0;
-    
-    }
-    .pContent2 h2 strong,
-    .pContent3 h2 strong{
-       color: white;
-       font-size: 1.5rem;
-    }
-    
-    .pointBox h3{
-        font-size: 0.8rem;
-        margin-bottom: 0.2rem;
-    }
-    .pointBox h3 i{
-        margin-right: 0.5rem;
-        font-size:0.7rem;
-    }
-    .pointBox p{
-        font-size: 0.6rem;
-    }
-    #readBtn{
-        padding: 0.3rem 0.8rem;
-        font-size: 0.8rem;
-    }
-
-    /* features */
-
-    .features h2 span{
-        width: 20%;
-        font-size: 0.8rem;
-
-    }
-    .fContent h3,
-    .fContent2 h3{
-        font-size: 0.8rem;
-        margin-top: 0.2rem;
-    }
-    .fIcon{
-        margin-top: 0.2rem;
-    }
-    .fContent p,
-    .fContent2 p{
-        font-size: 0.6rem;
-        margin-top: 0.2rem;
-    }
-    .fBtn{
-        padding: 0.3rem 0.8rem;
-        font-size: 0.8rem;
-    }
-
-    
-    /* pricing  */
-
-    .pContent2 h3,
-    .pContent3 h3{
-        color: white;
-        font-size: 1rem;
-    }
-    .pContent1 p{
-        font-size: 0.6rem;
-    }
-    .pContent2 p,
-    .pContent3 p{
-        font-size: 0.6rem;
-    }
-    .pContent1 h3{
-        font-size: 0.9rem;
-    }
-    .pContent2 h2 span,
-    .pContent3 h2 span{
-        font-size: 1.9rem;
-        
-    }
-    .pContent1 h1{
-        font-size: 1.2rem;
-    }
-    .pBtn{
-        padding: 0.3rem 0.8rem;
-        font-size: 0.8rem;
-       
-    
-    }
-
-    /* trainers  */
-    .trainers h2 span{
-        width: 20%;
-        font-size: 0.8rem;
-        
-    
-    }
-    .tInfo p{
-        font-size: 0.6rem;
-    
-    }
-    .tInfo h2{
-        font-size: 1rem;
-    }
-
-    /* join  */
-
-    .join h3{
-        font-size: 0.8rem;
-        margin-bottom: 0.2rem;
-    }
-    .join h1{
-        font-size:1.4rem;
-        margin-bottom: 0.2rem;
-    }
-    .join p{
-        font-size:0.6rem;
-        margin-bottom: 0.2rem;
-    }
-    .joinBtn{
-        padding: 0.3rem 0.8rem;
-        font-size: 0.8rem;
-    
-    }
-    .joinContent{
-        width: 60%;
-        padding: 0.3rem 0.8rem;
-    
-    }
-
-    /* testimonials  */
-    .testimonials .testHeading{
-        width: 30%;
-        padding: 0rem 0.8rem;
-    }
-    .testHeading h3{
-        font-size: 0.8rem;
-        margin-bottom: 0.2rem;
-    }
-    .testHeading h2{
-        font-size: 1rem;
-        margin-bottom: 0.2rem;
-    }
-    .testHeading p{
-        font-size: 0.6rem;
-        margin-bottom: 0.2rem;
-    }
-   
-    .testimonials .testContent{
-        padding: 0.5rem 0.8rem;
-        margin-left: 1rem;
-    }
-    .testProfile img{
-        width:1.8rem;
-        margin: 0.2rem 0.3rem 0.2rem 0rem ;
-    }
-    .testContent p{
-        font-size: 0.6rem;
-    }
-    .testInfo h2{
-        font-size: 0.8rem;
-    }
-    .testInfo h3{
-        font-size: 0.6rem;
-    }
-    .testBtn{
-        padding: 0.3rem 0.8rem;
-        font-size: 0.8rem;
-    
-    }
-
-    /* joining form  */
-    .joining h2 span{
-        width: 19%;
-        font-size: 0.8rem;
-    
-    }
-    .joining .joinImg{
-        flex: 0.8;
-    
-    }
-    .joinImg::before,
-    .joinImg::after{
-        content: "";
-        background-color: red;
-        position: absolute;
-        z-index: -1;
-        height: 6rem;
-        width: 6rem;
-    }
-    .joinImg::before{
-        top: 1.4%;
-        left: 2%;
-    }
-    .joinImg::after{
-        bottom: 1%;
-        right: 1%;
-    }
-    .joinForm h1,
-    .joinForm span{
-        font-size: 2.5rem;
-    }
-    
-    .formContent .form input{
-        font-size: 1rem;
-        margin-bottom: 0.4rem;
-        padding: 0.4rem 0.5rem;
-    }
-    #formBtn{
-        padding: 0.3rem 0.8rem;
-        font-size: 0.8rem;
-       
-    
-    }
-
-    /* blog section  */
-
-.blogs h2 span{
-    width: 20%;
-    font-size: 0.8rem;
-
-}
-.blogContent{
-    display: flex;
-    flex-direction: column;
-    margin:auto;
-    flex:1;
-    margin-left: 0.8rem;
-    margin-bottom:1rem;
-    flex-wrap:wrap;
-}
-
-.bInfo{
-    padding:0.8rem 0.8rem;
-
-}
-
-.bInfo #bText strong{
-    font-size: 0.6rem;
-    
-}
-.bInfo h2{
-    font-size: 0.9rem;
-    margin-bottom: 0.2rem;
-    margin-top:0.2rem;
-}
-.bInfo p{
-    font-size: 0.6rem;
-    margin-bottom: 0.2rem;
-
-}
-.bBtn{
-    padding: 0.3rem 0.8rem;
-    font-size: 0.8rem;
-}
-
-/* footer  */
-
-.footerContent h3{
-    font-size: 0.8rem;
-    margin-bottom: 0.2rem;
-}
-.footerContent a{
-    font-size:0.6rem;
-    margin-bottom: 0.2rem;
-    
-}
-
-.footerContent p{
-    font-size:0.6rem;
-    margin-bottom: 0.3rem;
-}
-
-.footerContent .share a{
-    padding:0.2rem 0.2rem;
-}
-.footerContent input{
-    padding: 0.2rem 0.4rem;
-    font-size: 0.6rem;
-    margin-bottom: 0.2rem;
-}
-.footerBtn{
-    padding: 0.3rem 0.8rem;
-    font-size: 0.8rem;
-}
-
-
-}
-
-@media screen and (max-width:650px){
-    .content span{
-        font-size:0.8rem ;
-    }
-    .content h3{
-        font-size:1rem ;
-    } 
-
-    /* about  */
-    #imgLogo::before,
-    #imgLogo::after{
-    content: "";
-    background-color: red;
-    position: absolute;
-    z-index: -1;
-    height: 5rem;
-    width: 5rem;
-
-    
-}
-    #imgLogo::before{
-        top: 2.5%;
-        left: 0%;
-    }
-    #imgLogo::after{
-        bottom: 2.5%;
-        right: 0%;
-    }
-    #imgLogo{
-        margin-top:1.5rem;
-    }
-   
-    .aboutContainer{
-        flex-wrap:wrap ;
-        padding-right: 3rem;
-        margin-top: 1.5rem;
-        
-    }
-    .writingContent h3{
-        font-size: 0.6rem;
-    }
-    .writingContent h2{
-        font-size: 0.8rem;
-    }
-    .writingContent p{
-       font-size: 0.4rem;
-        font-weight: 3rem;
-    }
-    .somePoints{
-        display:flex;
-        margin-top: 0.8rem;
-        flex-wrap: wrap;
-        
-    }
-    .pointBox{
-        margin-bottom: 0.6rem;
-        width: 50%;
-        padding: 0 1.6rem 0rem 0;
-    
-    }
-    
-    .pointBox h3{
-        font-size: 0.6rem;
-        margin-bottom: 0.1rem;
-    }
-    .pointBox h3 i{
-        margin-right: 0.3rem;
-        font-size:0.7rem;
-    }
-    .pointBox p{
-        font-size: 0.4rem;
-    }
-    #readBtn{
-        padding: 0.3rem 0.6rem;
-        font-size: 0.6rem;
-    }
-
-    /* features */
-
-    .features h2 span{
-        width: 20%;
-        font-size: 0.6rem;
-
-    }
-    .fContent h3,
-    .fContent2 h3{
-        font-size: 0.6rem;
-        margin-top: 0.2rem;
-    }
-    .fIcon{
-        margin-top: 0.2rem;
-    }
-    .fContent p,
-    .fContent2 p{
-        font-size: 0.4rem;
-        margin-top: 0.2rem;
-    }
-    .fBtn{
-        padding: 0.3rem 0.6rem;
-        font-size: 0.6rem;
-    }
-
-    
-    /* pricing  */
-
-    .pContent2 h3,
-    .pContent3 h3{
-        color: white;
-        font-size: 0.8rem;
-    }
-    .pContent1 p{
-        font-size: 0.4rem;
-    }
-    .pContent2 h2 strong,
-    .pContent3 h2 strong{
-       color: white;
-       font-size: 1.2rem;
-    }
-    .pContent2 p,
-    .pContent3 p{
-        font-size: 0.4rem;
-    }
-    .pContent1 h3{
-        font-size: 0.7rem;
-    }
-    .pContent2 h2 span,
-    .pContent3 h2 span{
-        font-size: 1.7rem;
-        
-    }
-    .pContent1 h1{
-        font-size: 1rem;
-    }
-    .pBtn{
-        padding: 0.3rem 0.6rem;
-        font-size: 0.6rem;
-       
-    
-    }
-
-    /* trainers  */
-    .trainers h2 span{
-        width: 20%;
-        font-size: 0.6rem;
-        
-    
-    }
-    .tInfo p{
-        font-size: 0.4rem;
-    
-    }
-    .tInfo h2{
-        font-size: 0.8rem;
-    }
-
-    /* join  */
-
-    .join h3{
-        font-size: 0.6rem;
-        margin-bottom: 0.1rem;
-    }
-    .join h1{
-        font-size:1.2rem;
-        margin-bottom: 0.2rem;
-    }
-    .join p{
-        font-size:0.4rem;
-        margin-bottom: 0.1rem;
-    }
-    .joinBtn{
-        padding: 0.3rem 0.6rem;
-        font-size: 0.6rem;
-    
-    }
-    .joinContent{
-        width: 62%;
-        padding: 0.3rem 0.8rem;
-    
-    }
-
-    /* testimonials  */
-    .testimonials .testHeading{
-        width: 30%;
-        padding: 0rem 0.8rem;
-    }
-    .testHeading h3{
-        font-size: 0.6rem;
-        margin-bottom: 0.2rem;
-    }
-    .testHeading h2{
-        font-size: 0.8rem;
-        margin-bottom: 0.2rem;
-    }
-    .testHeading p{
-        font-size: 0.4rem;
-        margin-bottom: 0.1rem;
-    }
-   
-    .testimonials .testContent{
-        padding: 0.3rem 0.6rem;
-        margin-left: 0.8rem;
-    }
-    .testProfile img{
-        width:1.6rem;
-        margin: 0.1rem 0.2rem 0.1rem 0rem ;
-    }
-    .testContent p{
-        font-size: 0.4rem;
-    }
-    .testInfo h2{
-        font-size: 0.6rem;
-    }
-    .testInfo h3{
-        font-size: 0.4rem;
-    }
-    .testBtn{
-        padding: 0.3rem 0.6rem;
-        font-size: 0.6rem;
-    
-    }
-
-    /* joining form  */
-    .joining h2 span{
-        width: 19%;
-        font-size: 0.7rem;
-    
-    }
-    .joining .joinImg{
-        flex: 0.9;
-    
-    }
-    .joinImg::before,
-    .joinImg::after{
-        content: "";
-        background-color: red;
-        position: absolute;
-        z-index: -1;
-        height: 5rem;
-        width: 5rem;
-    }
-    .joinImg::before{
-        top: 2%;
-        left: 2%;
-    }
-    .joinImg::after{
-        bottom: 1.6%;
-        right: 1%;
-    }
-    .joinForm h1,
-    .joinForm span{
-        font-size: 2rem;
-    }
-    
-    .formContent .form input{
-        font-size: 0.8rem;
-        margin-bottom: 0.3rem;
-        padding: 0.3rem 0.4rem;
-    }
-    #formBtn{
-        padding: 0.3rem 0.6rem;
-        font-size: 0.6rem;
-       
-    
-    }
-
-    /* blog section  */
-
-.blogs h2 span{
-    width: 20%;
-    font-size: 0.7rem;
-
-}
-.blogContent{
-    display: flex;
-    flex-direction: column;
-    margin:auto;
-    flex:1;
-    margin-left: 0.6rem;
-    margin-bottom:1rem;
-    flex-wrap:wrap;
-}
-
-.bInfo{
-    padding:0.6rem 0.6rem;
-
-}
-
-.bInfo #bText strong{
-    font-size: 0.4rem;
-    
-}
-.bInfo h2{
-    font-size: 0.7rem;
-    margin-bottom: 0.2rem;
-    margin-top:0.2rem;
-}
-.bInfo p{
-    font-size: 0.4rem;
-    margin-bottom: 0.1rem;
-
-}
-.bBtn{
-    padding: 0.3rem 0.6rem;
-    font-size: 0.6rem;
-}
-
-/* footer  */
-.footer{
-    margin-top: 2rem;
-    padding-top: 1rem;
-}
-
-.footerContent h3{
-    font-size: 0.6rem;
-    margin-bottom: 0.2rem;
-}
-.footerContent a{
-    font-size:0.4rem;
-    margin-bottom: 0.2rem;
-    
-}
-
-.footerContent p{
-    font-size:0.4rem;
-    margin-bottom: 0.2rem;
-}
-
-.footerContent .share a{
-    padding:0.2rem 0.2rem;
-}
-.footerContent input{
-    padding: 0.1rem 0.3rem;
-    font-size: 0.4rem;
-    margin-bottom: 0.2rem;
-}
-.footerBtn{
-    padding: 0.3rem 0.6rem;
-    font-size: 0.6rem;
-}
-.credit{
-    margin-top:2.5rem;
-    font-size:0.6rem;
-}
-
-}
-
-@media screen and (max-width:450px){
-    .content span{
-        font-size:0.6rem ;
-    }
-    .content h3{
-        font-size:0.8rem ;
-    } 
-
-    /* about  */
-    #imgLogo::before,
-    #imgLogo::after{
-    content: "";
-    background-color: red;
-    position: absolute;
-    z-index: -1;
-    height: 3rem;
-    width: 3rem;
-
-    
-}
-
-    #imgLogo::before{
-        top: 4.5%;
-        left: 0%;
-    }
-    #imgLogo::after{
-        bottom: 4.5%;
-        right: 0%;
-    }
-    .aboutContainer{
-        flex-wrap:wrap ;
-        padding-right: 3rem;
-        margin-top: 1rem;
-        
-    }
-    .writingContent h3{
-        font-size: 0.4rem;
-    }
-    .writingContent h2{
-        font-size: 0.6rem;
-    }
-    .writingContent p{
-       font-size: 0.2rem;
-    }
-    .somePoints{
-        margin-top: 0.6rem;
-        
-    }
-    .pointBox{
-        margin-bottom: 0.5rem;
-        width: 50%;
-        padding: 0 1.4rem 0rem 0;
-    
-    }
-    
-    .pointBox h3{
-        font-size: 0.4rem;
-        margin-bottom: 0.1rem;
-    }
-    .pointBox h3 i{
-        margin-right: 0.3rem;
-        font-size:0.3rem;
-    }
-    .pointBox p{
-        font-size: 0.2rem;
-    }
-    #readBtn{
-        padding: 0.2rem 0.4rem;
-        font-size: 0.4rem;
-    }
-
-    /* features */
-
-    .features h2 span{
-        width: 21%;
-        font-size: 0.4rem;
-
-    }
-    .fContent h3,
-    .fContent2 h3{
-        font-size: 0.4rem;
-        margin-top: 0.1rem;
-    }
-    .fIcon{
-        margin-top: 0.1rem;
-
-    }
-    .fIcon img{
-        width: 50%;
-    }
-    .fContent p,
-    .fContent2 p{
-        font-size: 0.2rem;
-        margin-top: 0.1rem;
-    }
-    .fBtn{
-        padding: 0.2rem 0.4rem;
-        font-size: 0.4rem;
-    }
-    
-    /* pricing  */
-
-    .pContent2 h3,
-    .pContent3 h3{
-        color: white;
-        font-size: 0.6rem;
-    }
-    .pContent1 p{
-        font-size: 0.2rem;
-    }
-    .pContent2 p,
-    .pContent3 p{
-        font-size: 0.2rem;
-    }
-    .pContent1 h3{
-        font-size: 0.5rem;
-    }
-    .pContent2 h2 span,
-    .pContent3 h2 span{
-        font-size: 1.7rem;
-        
-    }
-
-    .pContent2 h2 strong,
-    .pContent3 h2 strong{
-       color: white;
-       font-size: 1rem;
-    }
-    .pContent1 h1{
-        font-size: 0.8rem;
-    }
-    .pBtn{
-        padding: 0.2rem 0.4rem;
-        font-size: 0.4rem;
-       
-    
-    }
-
-    /* trainers  */
-    .trainers h2 span{
-        width: 21%;
-        font-size: 0.4rem;
-        
-    
-    }
-    .tInfo p{
-        font-size: 0.2rem;
-    
-    }
-    .tInfo h2{
-        font-size: 0.6rem;
-    }
-
-    /* join  */
-
-    .join h3{
-        font-size: 0.4rem;
-        margin-bottom: 0.1rem;
-    }
-    .join h1{
-        font-size:1rem;
-        margin-bottom: 0.1rem;
-    }
-    .join p{
-        font-size:0.3rem;
-        margin-bottom: 0.1rem;
-    }
-    .joinBtn{
-        padding: 0.2rem 0.4rem;
-        font-size: 0.4rem;
-    
-    }
-    .joinContent{
-        width: 64%;
-        padding: 0.2rem 0.7rem;
-    
-    }
-
-    /* testimonials  */
-    .testimonials .testHeading{
-        width: 30%;
-        padding: 0rem 0.6rem;
-    }
-    .testHeading h3{
-        font-size: 0.4rem;
-        margin-bottom: 0.1rem;
-    }
-    .testHeading h2{
-        font-size: 0.8rem;
-        margin-bottom: 0.1rem;
-    }
-    .testHeading p{
-        font-size: 0.2rem;
-        margin-bottom: 0.1rem;
-    }
-   
-    .testimonials .testContent{
-        padding: 0.2rem 0.4rem;
-        margin-left: 0.6rem;
-    }
-    .testProfile img{
-        width:1.1rem;
-        margin: 0.1rem 0.1rem 0.1rem 0rem ;
-    }
-    .testContent p{
-        font-size: 0.2rem;
-    }
-    .testInfo h2{
-        font-size: 0.4rem;
-    }
-    .testInfo h3{
-        font-size: 0.2rem;
-    }
-    .testBtn{
-        padding: 0.2rem 0.4rem;
-        font-size: 0.4rem;
-    
-    }
-
-    /* joining form  */
-    .joining h2 span{
-        width: 21%;
-        font-size: 0.4rem;
-    
-    }
-    .joining .joinImg{
-        flex: 1;
-    
-    }
-    .joinImg::before,
-    .joinImg::after{
-        content: "";
-        background-color: red;
-        position: absolute;
-        z-index: -1;
-        height: 4rem;
-        width: 4rem;
-    }
-    .joinImg::before{
-        top: 4%;
-        left: 1%;
-    }
-    .joinImg::after{
-        bottom: 4%;
-        right: 0.2%;
-    }
-    .joinForm h1,
-    .joinForm span{
-        font-size: 1.8rem;
-    }
-    
-    .formContent .form input{
-        font-size: 0.6rem;
-        margin-bottom: 0.2rem;
-        padding: 0.2rem 0.3rem;
-    }
-    #formBtn{
-        padding: 0.2rem 0.4rem;
-        font-size: 0.4rem;
-       
-    
-    }
-
-    /* blog section  */
-
-.blogs h2 span{
-    width: 21%;
-    font-size: 0.4rem;
-
-}
-.blogContent{
-    display: flex;
-    flex-direction: column;
-    margin:auto;
-    flex:1;
-    margin-left: 0.4rem;
-    margin-bottom:1rem;
-    flex-wrap:wrap;
-}
-
-.bInfo{
-    padding:0.4rem 0.4rem;
-
-}
-
-.bInfo #bText strong{
-    font-size: 0.2rem;
-    margin-bottom: 0.1rem;
-}
-.bInfo h2{
-    font-size: 0.4rem;
-    margin-bottom: 0.1rem;
-    margin-top:0.1rem;
-}
-.bInfo p{
-    font-size: 0.2rem;
-    margin-bottom: 0.1rem;
-
-}
-.bBtn{
-    padding: 0.2rem 0.4rem;
-    font-size: 0.4rem;
-}
-
-/* footer  */
-
-.footer{
-    margin-top: 2rem;
-    padding-top: 0rem;
-}
-
-.footerContent h3{
-    font-size: 0.4rem;
-    margin-bottom: 0.1rem;
-}
-.footerContent a{
-    font-size:0.2rem;
-    margin-bottom: 0.1rem;
-    
-}
-
-.footerContent p{
-    font-size:0.2rem;
-    margin-bottom: 0.1rem;
-}
-
-.footerContent .share a{
-    padding:0.2rem 0.2rem;
-}
-.footerContent input{
-    padding: 0.1rem 0.2rem;
-    font-size: 0.3rem;
-    margin-bottom: 0.1rem;
-}
-.footerBtn{
-    padding: 0.2rem 0.4rem;
-    font-size: 0.4rem;
-}
-.credit{
-    margin-top:1.5rem;
-    font-size: 0.4rem;
-}
-
-
-}
 
 
 @media screen and (max-width:800px){
@@ -2693,10 +1492,6 @@ body {
         width: 100%;
         background: rgb(27, 27, 27);
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-        /* clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%); */
-
-        
-        
     }
     #navbar.active{
         clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
@@ -2706,8 +1501,340 @@ body {
         flex-direction: column;
 
     }
+
+   
+}
+    
+@media screen and (max-width:750px) {
+    .content{
+        max-width: 1000px;
+    }
+
+    /* .testimonials */
+    .testHeading h3{
+        font-size: 1rem;
+        color: red;
+        margin-bottom: 0.5rem;
+    }
+    .testHeading h2{
+        font-size: 1.2rem;
+        color: white;
+        margin-bottom: 0.5rem;
+    }
+    .testHeading p{
+        font-size: 0.8rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .testProfile img{
+        width:3rem;
+        margin: 0.4rem 0.8rem;
+        margin-left: 0;
+    }
+    .testContent p{
+        font-size: 0.8rem;
+        /* margin:0 1rem; */
+    }
+    .testInfo h2{
+        font-size: 1.5rem;
+    }
+    .testInfo h3{
+        font-size: 1.2rem;
+    }
+    .testBtn{
+        padding: 0.5rem 1.2rem;
+        font-size: 1rem;
+    }
+
+    /* joining form  */
+
+    .joining h2 span{
+        width: 18%;
+        padding: 0.4rem 0.4rem;
+        font-size: 0.8rem;
+    
+    }
+
+
+    
+}
+
+@media screen and (max-width:690px) {
+    .joining .joinImg{
+        display:flex;
+        width: 80%;
+        position: relative;
+    
+    }
+    
+}
+
+@media screen and (max-width:620px){
+
+    /* home  */
+
+    .content span{
+        font-size:0.8rem ;
+        color:red;
+        margin-bottom:0.5rem;
+        
+    }
+    .content h3{
+        font-size:1rem ;
+        color:white;
+        margin-bottom:0.5rem;
+    } 
+   
+    .content .btn{
+        padding: 0.4rem 0.8rem;
+        font-size: 0.8rem;
+    
+    }
+    .navigation-dots div{
+        width: 12px;
+        height: 12px;
+        margin: 0px 5px;
+    }
+
+    
+    /* about-section */
+
+    #imgContainer{
+        width: 95%;
+        margin:auto;
+        
+    }
+    
+    
+    #imgLogo::before{
+        top: 2%;
+        left: 7%;
+    }
+    #imgLogo::after{
+        bottom: 2%;
+        right: 7%;
+    }
+
+    .aboutContainer{
+        width: 90%;
+        padding-right: 0rem;
+        margin-top: 1rem;
+        margin: auto;
+    }
+    .writingContent h3{
+        font-size: 1.5rem;
+    }
+    .writingContent h2{
+        font-size: 2rem;
+        font-weight: 2rem;
+    }
+    .writingContent p{
+        color: rgb(90, 90, 90);
+        font-size:1rem;
+        font-weight: 3rem;
+    }
+    .pointBox{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2rem;
+        text-align: justify;
+        width: 50%;
+        padding: 0 2rem 0rem 0;
+
+    }
+
+    .pointBox h3{
+        margin-bottom: 4px;
+        font-size: 1rem;
+    }
+    .pointBox h3 i{
+        font-size: 0.9rem;
+        margin-right: 0.5rem;
+    }
+    .pointBox p{
+        color: rgb(90, 90, 90);
+        font-size:1rem;
+    }
+    #readBtn{
+        padding: 0.7rem 0.8rem;
+        font-size: 0.8rem;
+
+    }
+
+
+
+    /* .testimonials */
+
+    .testimonials{
+        flex-direction: column;
+    }
+    .testimonials .testHeading{
+        width: 100%;
+    }
+    .testSlider{
+        width:100%;
+    }
+
+    /* trainers  */
+    .trainers h2 span{
+        width: 33%;
+        padding: 0.5rem 0.5rem;
+        font-size: 0.8rem;
+    
+    }
+
     
 
 }
+
+@media screen and (max-width:690px){
+    .joinImg::before,
+    .joinImg::after{
+        content: "";
+        background-color: red;
+        position: absolute;
+        z-index: -1;
+        height: 5rem;
+        width: 5rem;
+
+        
+    }
+    .joinImg::before{
+        top: 0.5%;
+        left: 2%;
+    }
+    .joinImg::after{
+        bottom: 0.5%;
+        right: 2%;
+    }
+
+    /* features  */
+    .features h2 span{
+        width: 25%;
+        padding: 0.5rem 0.5rem;
+        font-size: 1rem;
     
+    }
+
+}
+
+@media screen and (max-width:550px){
     
+    .joining h2 span{
+        width: 25%;
+        padding: 0.5rem 0.5rem;
+        font-size: 0.8rem;
+    
+    }
+    .joinImg::before,
+    .joinImg::after{
+        content: "";
+        background-color: red;
+        position: absolute;
+        z-index: -1;
+        height: 5rem;
+        width: 5rem;
+
+        
+    }
+    .joinImg::before{
+        top: 0.5%;
+        left: 2%;
+    }
+    .joinImg::after{
+        bottom: 0.5%;
+        right: 2%;
+    }
+
+    /* features  */
+    .features h2 span{
+        width: 29%;
+        padding: 0.5rem 0.1rem;
+        font-size: 0.9rem;
+    
+    }
+}
+
+
+@media screen and (max-width:390px){
+
+    /* home  */
+    .content span{
+        font-size:0.7rem ;
+        color:red;
+        margin-bottom:0.5rem;
+        
+    }
+    .content h3{
+        font-size:0.8rem ;
+        color:white;
+        margin-bottom:0.5rem;
+    } 
+   
+    .content .btn{
+        padding: 0.4rem 0.6rem;
+        font-size: 0.6rem;
+    
+    }
+
+    /* about  */
+    #imgLogo::before,
+    #imgLogo::after{
+    content: "";
+    background-color: red;
+    position: absolute;
+    z-index: -1;
+    height: 4rem;
+    width: 4rem;
+    }
+
+    /* trainers  */
+    .trainers h2 span{
+        width: 40%;
+        padding: 0.5rem 0.5rem;
+        font-size: 0.8rem;
+    
+    }
+    .blogs h2 span{
+        width: 32%;
+        padding: 0.5rem 0.5rem;
+        font-size: 0.8rem;
+    
+    }
+    .features h2 span{
+        width: 32%;
+        padding: 0.5rem 0.1rem;
+        font-size: 0.8rem;
+    
+    }
+
+    /* joining  */
+    .joining h2 span{
+        width: 35%;
+        padding: 0.5rem 0.5rem;
+        font-size: 0.8rem;
+    
+    }
+    .joinImg::before,
+    .joinImg::after{
+        height: 4rem;
+        width: 4rem;
+
+        
+    }
+    .joinImg::before{
+        top: 1.5%;
+        left: 2%;
+    }
+    .joinImg::after{
+        bottom: 1.5%;
+        right: 2%;
+    }
+
+    /* credit  */
+    .credit{
+        margin-top:2rem;
+          font-size: 0.8rem;
+    }
+}
+
