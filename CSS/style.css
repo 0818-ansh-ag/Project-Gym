@@ -724,7 +724,6 @@ body {
     width: 30%;
     align-items:flex-start;
     padding: 0rem 2rem;
-    background-color: blue;
 }
 .testHeading h3{
     color: red;
@@ -746,7 +745,6 @@ body {
     justify-content:center ;
     overflow-x: hidden;
     flex-wrap:wrap;
-    background-color: chartreuse;
 }
 .testimonials .testContent{
     display: flex;
@@ -863,7 +861,7 @@ body {
 
 }
 .joinImg img{
-    width: 90%;
+    width: 80%;
     object-fit: cover;
     object-position: center;
     margin: 1rem auto;
@@ -885,11 +883,11 @@ body {
 }
 .joinImg::before{
     top: 0%;
-    left: 2%;
+    left: 7%;
 }
 .joinImg::after{
     bottom: 0.2%;
-    right: 2%;
+    right: 7%;
 }
 .joinForm{
     display:flex;
@@ -1701,11 +1699,11 @@ body {
     }
     .joinImg::before{
         top: 0.5%;
-        left: 2%;
+        left: 7%;
     }
     .joinImg::after{
         bottom: 0.5%;
-        right: 2%;
+        right: 7%;
     }
 
     /* features  */
@@ -1726,6 +1724,12 @@ body {
         font-size: 0.8rem;
     
     }
+    .blogs h2 span{
+        width: 25%;
+        padding: 0.5rem 0.5rem;
+        font-size: 0.9rem;
+    
+    }
     .joinImg::before,
     .joinImg::after{
         content: "";
@@ -1739,11 +1743,11 @@ body {
     }
     .joinImg::before{
         top: 0.5%;
-        left: 2%;
+        left: 7%;
     }
     .joinImg::after{
         bottom: 0.5%;
-        right: 2%;
+        right: 7%;
     }
 
     /* features  */
@@ -1753,6 +1757,33 @@ body {
         font-size: 0.9rem;
     
     }
+}
+
+@media screen and (max-width:450px)
+{
+
+    .joining h2 span{
+        width: 30%;
+        padding: 0.5rem 0.5rem;
+        font-size: 0.8rem;
+    
+    }
+    .joinImg::before{
+        top: 1%;
+        left: 7%;
+    }
+    .joinImg::after{
+        bottom: 1%;
+        right: 7%;
+    }
+    .blogs h2 span{
+        width: 32%;
+        padding: 0.5rem 0.5rem;
+        font-size: 0.8rem;
+    
+    }
+
+
 }
 
 
@@ -1790,9 +1821,9 @@ body {
 
     /* trainers  */
     .trainers h2 span{
-        width: 40%;
+        width: 45%;
         padding: 0.5rem 0.5rem;
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     
     }
     .blogs h2 span{
@@ -1824,11 +1855,11 @@ body {
     }
     .joinImg::before{
         top: 1.5%;
-        left: 2%;
+        left: 7%;
     }
     .joinImg::after{
         bottom: 1.5%;
-        right: 2%;
+        right: 7%;
     }
 
     /* credit  */
