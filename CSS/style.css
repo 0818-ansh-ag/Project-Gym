@@ -37,12 +37,23 @@ body {
 
 .header{
     display: flex;
-    width: 90%;
-    height: 10vh;
+    width: 100%;
     margin:auto;
     border: brown;
     align-items: center;
+    position: fixed;
+    z-index: 100000;
+    height: 10vh;
+    justify-content: center;
+    background-color: #000;
     
+}
+.header_content{
+    display: flex;
+    z-index: 10000000;
+    width: 90%;
+    height: 10vh;
+    align-items: center;
 }
 
   
@@ -85,6 +96,7 @@ body {
     width: 100%;
     overflow:hidden;
 }
+
 .content{
     position:absolute;
     top: 35%;
@@ -151,19 +163,20 @@ body {
 .slides-container{
     
     height: 80vh;
-    position: relative;
+    /* position: relative; */
 }
+
 .slide-image{
-    height:100%;
+    height:80%;
     width: 100%;
-    position:absolute;
+    position:fixed;
     object-fit:cover;
     background-repeat: no-repeat;
     background-size: cover;
-    z-index: 1;
+    z-index: -1;
     display: none;
     animation:slide 3s ease;
-   
+    /* opacity: 0.4; */
     
 }
 @keyframes slide{
@@ -231,13 +244,20 @@ body {
 
 
 /* about-section */
-
+.main{
+    width:100%;
+    height: 100%;
+    background-color: #000;
+    position: relative;
+    z-index: -1;
+}
 .about{
     display: flex;
     flex-direction: row;
     align-items: center;
     color: white;
     flex-wrap: wrap;
+    background-color: #000;
 }
 #imgContainer{
     position: relative;
@@ -259,6 +279,8 @@ body {
     object-position: center;
     margin: 1rem auto;
     cursor: pointer;
+    z-index: 100;
+    /* border: 1px solid red; */
 }
 #imgLogo img:hover{
     transform: scale(1.01);
@@ -268,7 +290,7 @@ body {
     content: "";
     background-color: red;
     position: absolute;
-    z-index: -1;
+    /* z-index: -1; */
     height: 9rem;
     width: 9rem;
 
@@ -373,6 +395,7 @@ body {
     flex-wrap: wrap;
     width: 90%;
     margin: auto;
+    /* background-color: #000; */
 }
 .mainBox{
     display: flex;
@@ -396,6 +419,7 @@ body {
     margin-top: 2rem;
     margin-bottom: 2rem;
     background-color: black;
+    z-index: -1;
 
 
 }
@@ -1055,8 +1079,9 @@ body {
 .footerContent{
     display: flex;
     flex-direction: column;
-    width: 400px;
+    width: 350px;
     margin-bottom: 1rem;
+    margin: auto;
     /* background-color: royalblue; */
 }
 
