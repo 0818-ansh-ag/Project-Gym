@@ -9,16 +9,20 @@
     /* text-transform: capitalize;
     -webkit-transition: all .2s linear; */
     /* transition: all .2s linear; */
-  }
-  .loginContainer{
+}
+
+
+  
+.loginContainer{
     position: absolute;
     display: flex;
     background-color: black;
     width: 100%;
     z-index: -1;
-  }
+}
 
-  .loginContainer .wrapper{
+
+.loginContainer .wrapper{
     /* position: relative; */
     overflow:hidden;
     width: 60%;
@@ -75,7 +79,7 @@
     align-items: center;
     /* justify-content: center; */
     width: 40%;
-    /* border: 1px solid red; */
+    border: 1px solid red;
     padding-top: 12rem;
     background-color: #000000;
     border: none;
@@ -85,23 +89,14 @@
     content: " ";
     position: absolute;
     top: 0;
-    left: 1100px;
+    left: 975px;
     width: 80px;
     height: 100%;
     z-index: 1;
     /* background: linear-gradient(to right, #0a0909,transparent); */
-    box-shadow: -70px 1px 30px #000000;
+    box-shadow: -70px 18px 30px #000000;
 }
-.loginContent::after{
-    content: " ";
-    position: absolute;
-    top: 0;
-    left: -900px;
-    width: 100px;
-    height: 100%;
-    z-index: 1;
-    background: linear-gradient(to right,#0a0909,transparent);
-}
+
 .loginContent .welcome h1{
      font-size: 3rem;
      font-weight: 600;
@@ -139,7 +134,7 @@
     padding: 7px 9px;
     border-radius: 0.3rem;
 }
-.loginContent form .login-btn {
+/* .loginContent form .login-btn button{
     margin-bottom: 0.8rem;
     background-color:red;
     color:white;
@@ -152,24 +147,147 @@
     text-align: center;
     cursor: pointer;
     box-shadow: 0 8px 25px -8px red;
-}
-.loginContent form .login-btn a{
+} */
+ /* button{
     color: white;
     
 
+} */
+.login-btn button{
+    width: 100%;
+    margin-bottom: 0.8rem;
+    background-color:red;
+    color:white;
+    padding: 0.7rem 1.4rem;
+    clip-path: polygon(100% 0, 100% 71%, 90% 100%, 0 100%, 0 0);
+    border-radius:0.2rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 8px 25px -8px red;
+
 }
+
 .loginContent form .login-btn:hover{
     transform: scale(1.01);
-    box-shadow: 0 8px 25px -8px red;
 }
 .loginContent form .sign-in{
-    width: 53%;
-    margin: auto;
-    text-align: center;
+    display: flex;
+    margin-top: 2rem;
+    justify-content:space-around;
 }
 .loginContent form .sign-in a{
+    
     color: red;
 
+}
+.loginContent form .sign-in a span{
+    color: white;
+    margin-right: 10px;
+    
+}
+.adminBtn form{
+    width: 20rem;
+    display: flex;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    justify-content: space-around;
+
+}
+.adminBtn span{
+    color: white;
+   
+}
+.adminBtn button{
+    background-color:red;
+    color:white;
+    padding: 0.5rem 1rem;
+    clip-path: polygon(100% 0, 100% 71%, 90% 100%, 0 100%, 0 0);
+    border-radius:0.2rem;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 8px 25px -8px red;
+    margin-left: 15px;
+
+}
+.adminBtn button:hover{
+    transform: scale(1.1);
+
+}
+
+/* Sign Up */
+.joinForm{
+    position: absolute;
+    top: 45px;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    flex:1;
+    margin: 1rem 2rem;
+    color: white;
+    width: 35rem;
+}
+.joinForm h1,
+.joinForm span{
+    font-size: 4rem;
+    text-align: center;
+}
+.joinForm span{
+    color:red;
+}
+
+.formContent1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+   
+
+}
+.formContent1 .form input{
+    width: 100%;
+    font-size: 1rem;
+    margin-bottom: 0.8rem;
+    padding: 1rem 1rem;
+    background-color: rgb(36, 35, 35);
+    color:white;
+    border-radius: 0.8rem;
+}
+#formBtn button{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    background-color:red;
+    color:white;
+    padding: 0.5rem 1.4rem;
+    clip-path: polygon(100% 0, 100% 71%, 90% 100%, 0 100%, 0 0);
+    border-radius:0.2rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin: auto;
+    display: flex;
+
+}
+#formBtn:hover{
+    transform:scale(1.1);
+}
+.loginbtn{
+    margin-top: 1.8rem;
+    text-align: center;
+}
+.loginbtn span{
+    font-size: 1.1rem;
+    color: white;
+    margin-right: 10px;
+}
+.loginbtn a{
+    color: red;
+    
 }
 
 

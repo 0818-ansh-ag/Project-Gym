@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gym Website</title>
+    <title>GYM WEBSITE - <?php $_SESSION['name'] ?> </title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
    
@@ -29,7 +29,7 @@
                     <li><a href="#pricing">pricing</a></li>
                     <li><a href="#trainers">trainers</a></li>
                     <li><a href="#blogs">blogs</a></li>
-                    <li><a href="login.html#joining">Login</a></li>
+                    <li><a href="login.php#joining">Logout</a></li>
                 </ul>
             </nav>
             <div id="menu-btn" class="fas fa-bars"></div>
@@ -370,8 +370,18 @@
 
 
 
-    <div class="joining" id="joining">
+    <!-- <div class="joining" id="joining">
         <h2><span>Join With Us</span></h2>
+        <?php
+        if($showAlert){
+            echo '<div id="success"><strong id="alert">Your Form has been Submitted Successfully and now you can login</strong><button id="sFBtn">X</button></div>';
+        }
+        if($showError){
+            echo '<div id="success"><strong id="alert">'.$showError.'</strong><button id="sFBtn">X</button></div>';
+        }
+        
+        ?>
+        
         <div id="success"><strong id="alert">Your Form has been Submitted Successfully</strong><button id="sFBtn">X</button></div>
         <div class="joinContainer">
             <div class="joinImg">
@@ -382,33 +392,40 @@
                 <div class="formContent">
                     <h1>Join<span>Now</span></h1>
 
-                    <form action="noaction.php" class="form" id="form">
+                    <form action="" method="post" class="form" id="form">
                         <div class="userName">
-                            <input type="text"  id="userName" placeholder="Enter your Name">
+                            <input type="text" name="username"  id="userName" placeholder="Enter your Name" required>
                         </div>
                         <div class="age">
-                            <input type="text" id="age" placeholder="Enter your Age">
+                            <input  type="number" name="age" id="age" placeholder="Enter your Age" required>
                         </div>
                         <div class="gender">
-                            <input type="text" id="gender" placeholder="Enter your Gender">
+                            <input type="text" name="gender" id="gender" placeholder="Enter your Gender" required>
                         </div>
                         <div class="locality">
-                            <input type="text" id="locality" placeholder="Enter your Locality">
+                            <input type="text" name="locality" id="locality" placeholder="Enter your Locality" required>
                         </div>
                         <div class="email">
-                            <input type="text" id="email" placeholder="Enter your Email Id">
+                            <input type="emai" name="email" id="email" placeholder="Enter your Email Id" required>
+                        </div>
+                        <div class="password">
+                            <input type="password" name="password" id="password" placeholder="Enter your Password" required>
+                        </div>
+                        <div class="Confirm_password">
+                            <input type="password" name="cpassword" id="cpassword" placeholder="Confirm your Password" required>
                         </div>
                         <div class="pNo">
-                            <input type="text" id="pNo" placeholder="Enter your Phone Number">
+                            <input type="text" name="pno" id="pNo" placeholder="Enter your Phone Number" required>
                         </div>
-                        <!-- <button class="formBtn">Submit</button> -->
-                        <a  id="formBtn">Submit</a>
+                        <div id="formBtn">
+                            <button type="submit" value="Signup" >Sign Up</button>
+                        </div>
                     </form>
                 </div>
             </div>
         </div>
         
-    </div>
+    </div> -->
 
 
     <div class="blogs" id="blogs">

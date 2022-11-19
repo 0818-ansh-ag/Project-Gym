@@ -2,6 +2,8 @@ console.log("Login-Page");
 let slide = document.querySelector(".slides-container").children;
 let index =0;
 
+
+
 function nextSlide(){
     if(index==slide.length-1){
         index = 0;

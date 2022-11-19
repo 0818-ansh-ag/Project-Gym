@@ -248,8 +248,7 @@ body {
     width:100%;
     height: 100%;
     background-color: #000;
-    position: relative;
-    z-index: -1;
+    /* position: inherit; */
 }
 .about{
     display: flex;
@@ -257,7 +256,7 @@ body {
     align-items: center;
     color: white;
     flex-wrap: wrap;
-    background-color: #000;
+    /* background-color: #000; */
 }
 #imgContainer{
     position: relative;
@@ -404,6 +403,9 @@ body {
     justify-content: center;
     flex-wrap: wrap;
 }
+.features h2{
+    z-index: 1;
+}
 
 .features h2 span{
     display: flex;
@@ -419,7 +421,8 @@ body {
     margin-top: 2rem;
     margin-bottom: 2rem;
     background-color: black;
-    z-index: -1;
+
+    
 
 
 }
@@ -430,6 +433,7 @@ body {
     width: 90%;
     height:0.1rem;
     z-index: -1;
+    
 
 }
 .fContainer,
@@ -618,6 +622,9 @@ body {
     margin: auto;
     position: relative;
     margin-bottom:2rem
+}
+.trainers h2{
+    z-index: 1;
 }
 
 .trainers h2 span{
@@ -819,11 +826,18 @@ body {
 /* joining form */
 
 .joining{
+ 
+    display: flex;
+    flex-direction: column;
     width: 90%;
     margin: auto;
-    margin-bottom:2rem;
+    position: relative;
+    margin-bottom:2rem
 
     
+}
+.joining h2{
+    z-index: 1000;
 }
 .joining h2 span{
     display: flex;
@@ -838,6 +852,15 @@ body {
     margin-top: 2rem;
     /* margin-bottom:2rem; */
     background-color: black;
+
+}
+.joining h2 span::before{
+    content: "";
+    position: absolute;
+    background:rgb(59, 59, 59);
+    width: 90%;
+    height:0.1rem;
+    z-index: -1;
 
 }
 #success{
@@ -859,15 +882,7 @@ body {
     padding: 0.2rem 1rem;
     border-radius: 0.3rem;
 }
-.joining h2 span::before{
-    content: "";
-    position: absolute;
-    background:rgb(59, 59, 59);
-    width: 90%;
-    height:0.1rem;
-    z-index: -1;
 
-}
 
 .joining .joinContainer{
     display:flex;
@@ -949,7 +964,7 @@ body {
     color:white;
     border-radius: 0.8rem;
 }
-#formBtn{
+#formBtn button{
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
     background-color:red;
@@ -959,6 +974,8 @@ body {
     border-radius:0.2rem;
     font-size: 1.2rem;
     cursor: pointer;
+    margin: auto;
+    display: flex;
 
 }
 #formBtn:hover{
@@ -978,6 +995,10 @@ body {
     margin: auto;
     position: relative;
     margin-bottom:2rem
+}
+
+.blogs h2 {
+    z-index: 1;
 }
 
 .blogs h2 span{
@@ -1079,9 +1100,10 @@ body {
 .footerContent{
     display: flex;
     flex-direction: column;
-    width: 350px;
+    width: 310px;
     margin-bottom: 1rem;
     margin: auto;
+    padding-bottom: 1rem;
     /* background-color: royalblue; */
 }
 

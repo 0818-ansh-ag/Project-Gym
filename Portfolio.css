@@ -1,0 +1,914 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@600&display=swap');
+:root {
+
+    --white: #ffffff;
+}
+*{
+    padding: 0;
+    margin: 0;
+     text-decoration: none;
+     line-height: 30px;
+     box-sizing: border-box;
+ 
+    /* color: white; */
+}
+a:-webkit-any-link {
+    color: white;
+    cursor: pointer;
+    text-decoration:none;
+}
+
+.portfolio{
+    display: flex;
+    position: absolute;
+}
+
+/* aside  */
+
+.aside{
+    display: flex;
+    position: fixed;
+   left: 0;
+   top: 0;
+    width: 18rem;
+    height: 100vh;
+    background-color:rgb(38, 38, 38);
+    align-items: center;
+   flex-direction: column;
+   color: var(--white);
+   font-family: 'Baloo Paaji 2', cursive;
+   border-right: 1px solid grey;
+   
+
+}
+
+.aside .logo{
+    position:absolute;
+    /* background-color: green; */
+    top: 30px;
+    font-size: 30px;
+    font-family: 'Dancing Script', cursive;
+    padding: 10px 30px;
+    
+    
+}
+.aside .logo a ::before{
+    content: "";
+    bottom: 0rem;
+    left: 0rem;
+    width: 1.2rem;
+    height: 1.2rem;
+    position: absolute;
+    border-left:solid 7px red;
+    border-bottom:solid 7px red;
+    z-index: 1;
+}
+.aside .logo a ::after{
+    content: "";
+    top: 0;
+    right: 0;
+    width: 1.2rem;
+    height: 1.2rem;
+    position: absolute;
+    border-right:solid 7px red;
+    border-top:solid 7px red;
+    z-index: 1;
+}
+.aside .logo a span{
+    font-size: 45px;
+    font-family: 'Baloo Paaji 2', cursive;
+}
+.aside .navbar{
+    position: absolute;
+    top: 250px;
+  
+}
+.aside .navbar ul li{
+    display: block;
+    margin-bottom:2.7rem ;
+    list-style:none ;
+    
+}
+.aside .navbar ul li a{
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-bottom: 1px solid grey;
+    padding: 5px 15px;
+    text-decoration: none;
+}
+.aside .navbar ul li a i{
+    margin-right: 15px;
+}
+.aside .navbar ul li a:hover{
+    color: red;
+}
+.aside .navbar ul li a.active{
+    color: red;
+}
+
+/* *************** */
+/* main  */
+/* ******************/
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80.9rem;
+    height: 100vh;
+    display: flex;
+    position: absolute;
+    transform: translateX(18rem);
+    /* background: #000; */
+
+}
+.main-content{ 
+    display: flex;
+    flex-wrap: wrap;
+    width: 80.9rem;
+    height: 100vh;
+    display: flex;
+    position: fixed;
+    background: #000;
+
+}
+.main-content .information{
+    position: absolute;
+    width:38rem;
+    height: 100vh;
+    /* background-color: blue; */
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    padding-left: 20px;
+    
+}
+.main-content .information .infoContainer{
+    /* background-color: yellow; */
+    margin-top: 6rem;
+    width: 95%;
+}
+.main-content .information .infoContainer .welcomeMessage{
+    /* background-color: green; */
+    display: flex;
+    justify-content: center;
+    font-family: 'Baloo Paaji 2', cursive;
+    width: 550px;
+    height: 70px;
+}
+.main-content .information .infoContainer .welcomeMessage h1{
+    font-size: 2.5rem;
+    color: #ffffff;
+}
+.main-content .information .infoContainer .welcomeMessage h1::before{
+    content: "";
+    position: absolute;
+    top:110px;
+    left: 80px;
+    width: 140px;
+    height: 20px;
+    border-bottom: 5px solid red;
+}
+.main-content .information .infoContainer .welcomeMessage h1::after{
+
+    content: "";
+    position: absolute;
+    top:120px;
+    left: 80px;
+    width: 100px;
+    height: 20px;
+    border-bottom: 5px solid red;
+}
+.main-content .information .infoContainer .welcomeMessage h1 span::before{
+    content: "";
+    position: absolute;
+    top:110px;
+    left: 260px;
+    width: 180px;
+    height: 20px;
+    border-bottom: 5px solid red;
+}
+.main-content .information .infoContainer .welcomeMessage h1 span::after{
+
+    content: "";
+    position: absolute;
+    top:120px;
+    left: 260px;
+    width: 120px;
+    height: 20px;
+    border-bottom: 5px solid red;
+}
+.main-content .information .infoContainer .infoContent{
+    width: 550px;
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* background-color: aqua; */
+}
+.main-content .information .infoContainer .infoContent div{
+    width: 200px;
+    height: 120px;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(49, 49, 49);
+    color: #ffffff;
+    border: 1px solid red;
+    border-radius: 1rem;
+
+}
+
+
+.main-content .profilePic{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    position: absolute;
+    right: 0;
+    width: 43rem;
+    height: 100vh;
+    padding-top: 4rem;
+    /* background-color: rgb(19, 19, 19); */
+    /* box-shadow:-5px -1px 30px 30px rgb(19, 19, 19); */
+}
+.main-content .profilePic .pic{
+    width: 280px;
+    height: 320px;
+    padding: 5px 5px;
+    /* background-color: aquamarine; */
+    position: relative;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.main-content .profilePic img{
+    width: 250px;
+    height: 280px;
+    border-radius: 5px;
+    
+
+}
+.main-content .profilePic img:hover{
+    transform: scale(1.1);
+}
+.main-content .profilePic .pic::after{
+    position: absolute;
+    content: "";
+    right: -15px;
+    bottom: -5px;
+    height: 80px;
+    width: 80px;
+    border-bottom: 10px solid red;
+    border-right: 10px solid red;
+}
+.main-content .profilePic .pic::before{
+    position: absolute;
+    content: "";
+    left: -15px;
+    top: -5px;
+    height: 80px;
+    width: 80px;
+    border-top: 10px solid red;
+    border-left: 10px solid red;
+}
+.main-content .profilePic .profileContainer{
+    display: flex;
+    width: 90%;
+    margin-top: 1.5rem;
+    /* background-color: yellow; */
+}
+.main-content .profilePic .profileContainer .profileContent{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+
+}
+.main-content .profilePic .profileContainer .profileContent div{
+    display: flex;
+    width: 280px;
+    padding: 0.5rem 0.5rem;
+    /* background-color: aqua; */
+    border-bottom: 1px solid grey;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.main-content .profilePic .profileContainer .profileContent h3{
+    color: white;
+    font-size: 1.3rem;
+}
+.main-content .profilePic .profileContainer .profileContent h3 span{
+    color: red;
+    font-size: 1.2rem;
+}
+
+.main-content .profilePic .adminEdit{
+    background-color: red;
+    color: white;
+    margin-top: 2rem;
+    padding: 0.5rem 1.5rem;
+    font-size: 1.2rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+ 
+.hidden{
+    display: none !important;
+} 
+
+/* ********** */
+/* about */
+/* ********** */
+
+.About{ 
+    display: flex;
+    flex-wrap: wrap;
+    width: 80.9rem;
+    height: 100vh;
+    display: flex;
+    position: absolute;
+
+}
+.About-content{ 
+    padding: 10px 20px;
+    padding-top: 40px;
+    width: 100%;
+    background-color: #000;
+
+}
+.About-content h1{
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 3rem;
+}
+
+.About-content h1::before{
+    content: "";
+    position: absolute;
+    top:63px;
+    left: 20px;
+    width: 50px;
+    height: 20px;
+    border-bottom: 5px solid red;
+}
+.About-content h1::after{
+    content: "";
+    position: absolute;
+    top:70px;
+    left: 20px;
+    width: 30px;
+    height: 20px;
+    border-bottom: 5px solid red;
+}
+.About-content .MemContainer{
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+
+}
+.About-content .MemContainer .MemHeading{
+    display: flex;
+    background-color: black;
+    color: red;
+    border: 1px solid grey;
+    justify-content: space-between;
+    padding: 10px 15px;
+}
+.About-content .MemContainer .MemHeading a{
+    color: white;
+    background-color: red;
+    border-radius: 0.2rem;
+    padding: 1px 14px;
+}
+.About-content .MemContainer .MemHeading a:hover{
+    transform: scale(1.01);
+}
+.About-content .MemContainer .TableInfo .TableEntries{
+    display: flex;
+    /* background-color: ; */
+    justify-content: space-between;
+    padding: 6px 15px;
+
+}
+.About-content .MemContainer .TableInfo{
+    background-color: rgb(105, 105, 105);
+    color: white;
+    border: 1px solid grey;
+}
+.About-content .MemContainer .TableInfo table{
+    color: #ffffff;
+    font-size: 1.1rem;
+    width: 98%;
+    margin: auto;
+    /* box-sizing: border-box; */
+
+}
+.About-content .MemContainer .TableInfo table th{
+    padding: 6px 10px;
+    background-color: rgb(18, 17, 17);
+
+    
+}
+.About-content .MemContainer .TableInfo table td{
+    padding: 6px 20px;
+    background-color: rgb(34, 33, 33);
+    position: relative;
+}
+.About-content .MemContainer .TableInfo table tr td a{
+    color: red;
+    border: 1px solid red;
+    border-radius: 0.2rem;
+    padding: 2px 6px;
+    cursor: pointer;
+}
+
+
+/* ************** */
+/*services*/
+/* **************** */
+
+.services{ 
+    display: flex;
+    flex-wrap: wrap;
+    width: 80.9rem;
+    height: 100vh;
+    display: flex;
+    position:absolute;
+    /* background: #000; */
+
+}
+.Services-content{ 
+    
+    padding: 10px 20px;
+    padding-top: 40px;
+    width: 100%;
+    background-color: #000;
+    font-family: 'Baloo Paaji 2', cursive;
+
+}
+.Services-content h1{
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 3rem;
+}
+.Services-content h1::before{
+    content: "";
+    position: absolute;
+    top:63px;
+    left: 20px;
+    width: 50px;
+    height: 20px;
+    border-bottom: 5px solid red;
+}
+.Services-content h1::after{
+    content: "";
+    position: absolute;
+    top:70px;
+    left: 20px;
+    width: 30px;
+    height: 20px;
+    border-bottom: 5px solid red;
+}
+.Services-content .serviceContainer{
+    position: relative;
+    display: block;
+    width: 78rem;
+    /* background-color: green; */
+    padding: 10px 20px;
+    
+}
+
+.Services-content .serviceContainer .serviceContainerContent{
+    display: flex;
+    width: 75rem;
+    flex-wrap: wrap;
+    /* border: 1px solid red; */
+    padding:10px 20px;
+    color: #ffffff;
+    justify-content: space-around;
+   
+}
+
+.Services-content .serviceContainer .serviceContainerContent .sContent{
+    width: 20rem;
+    margin-left:1rem;
+    margin-top: 1rem;
+    margin-bottom:1.5rem;
+    border: 1px solid grey;
+    text-align: center;
+    padding: 10px 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    
+}
+.Services-content .serviceContainer .serviceContainerContent .sContent:hover{
+    box-shadow: 0 0 23px rgba(174, 174, 176, 0.15); 
+    transform: scale(1.1);
+ } 
+
+.Services-content .serviceContainer .serviceContainerContent .sContent h3{
+    font-size: 1.3rem;
+    font-weight: bolder;
+    margin-bottom: 1rem;
+}
+.Services-content .serviceContainer .serviceContainerContent .sContent p{
+    font-size: 1rem;
+    line-height: 20px;
+}
+
+.Services-content .serviceContainer .serviceContainerContent .sContent i{
+    color: red;
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* ******************* */
+/* Updation */
+/* ******************* */
+.update{ 
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    position:fixed;
+}
+.Update-content{ 
+    
+    padding: 10px 20px;
+    padding-top: 40px;
+    width: 100%;
+    background-color: #000;
+    font-family: 'Baloo Paaji 2', cursive;
+
+}
+.Update-content h1{
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 3rem;
+}
+.Update-content h2{
+    color: red;
+    font-size:2.5rem ;
+}
+.Update-content h1::before{
+    content: "";
+    position: absolute;
+    top:63px;
+    left: 20px;
+    width: 50px;
+    height: 20px;
+    border-bottom: 5px solid red;
+}
+.Update-content h1::after{
+    content: "";
+    position: absolute;
+    top:70px;
+    left: 20px;
+    width: 30px;
+    height: 20px;
+    border-bottom: 5px solid red;
+}
+.Update-content .updateContainer{
+    position: relative;
+    width: 78rem;
+    margin: auto;
+    /* background-color:bisque ; */
+}
+.Update-content .updateContainer .greeting{
+    position: relative;
+    margin: auto;
+    width: 70rem;
+    text-align: center;
+    /* background-color: aqua; */
+    margin-bottom: 1.8rem;
+}
+.Update-content .updateContainer .greeting .greetingContent h2{
+    color: red;
+    margin-bottom: 0.6rem;
+}
+.Update-content .updateContainer .greeting .greetingContent p{
+    color: white;
+}
+
+/* ****************** */
+ /* SignUP */
+/* ******************* */
+.signUp{ 
+    display: flex;
+    flex-wrap: wrap;
+    width: 80.9rem;
+    height: 100vh;
+    display: flex;
+    position:fixed;
+}
+.Sign-content{ 
+    
+    padding: 10px 20px;
+    padding-top: 40px;
+    width: 100%;
+    background-color: #000;
+    font-family: 'Baloo Paaji 2', cursive;
+
+}
+.Sign-content h1{
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 3rem;
+}
+.Sign-content h2{
+    color: red;
+    font-size:2.5rem ;
+}
+.Sign-content h1::before{
+    content: "";
+    position: absolute;
+    top:63px;
+    left: 20px;
+    width: 50px;
+    height: 20px;
+    border-bottom: 5px solid red;
+}
+.Sign-content h1::after{
+    content: "";
+    position: absolute;
+    top:70px;
+    left: 20px;
+    width: 30px;
+    height: 20px;
+    border-bottom: 5px solid red;
+}
+.Sign-content .signContainer{
+    position: relative;
+    width: 78rem;
+    margin: auto;
+    /* background-color:bisque ; */
+}
+.Sign-content .signContainer .greeting{
+    position: relative;
+    margin: auto;
+    width: 70rem;
+    text-align: center;
+    /* background-color: aqua; */
+    margin-bottom: 1.8rem;
+}
+.Sign-content .signtContainer .greeting .greetingContent h2{
+    color: red;
+    margin-bottom: 0.6rem;
+}
+.Sign-content .signContainer .greeting .greetingContent p{
+    color: white;
+}
+.formContent{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    /* border: 1px solid red; */
+    padding: 10px 10px;
+}
+.formContent form{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    /* border: 1px green solid; */
+    justify-content: space-evenly;
+}
+.formContent form input{
+    /* width: 30rem;
+    font-size: 1.2rem;
+    padding: 10px 5px;
+    border-radius: 1rem; */
+    width: 19rem;
+    padding: 4px 17px;
+    height: 3rem;
+    font: bolder;
+    font-size: 1.1rem;
+    color: #ffffff;
+    border-radius: 18px;
+    margin-bottom: 1.6rem;
+    background-color: rgb(68, 68, 68);
+    border: 1px solid black;
+
+}
+.formContent form textarea{
+    width: 60rem;
+    height: 10rem;
+    max-width: 60rem;
+    border-radius: 18px;
+    padding: 4px 17px;
+    font-size: 1.1rem;
+    color: #ffffff;
+    font: bolder;
+    background-color: rgb(68, 68, 68);
+    border: 1px solid black;
+    margin-bottom: 2rem;
+
+}
+
+/* .formContent form .sNo input{
+    transform: translateX(-6rem);
+    width: 5rem;
+} */
+.formContent form button{
+    background-color: red;
+    color: white;
+    width: 10rem;
+    font-size: 1rem;
+    padding: 6px 18px;
+    border-radius: 12px;
+}
+.formContent form button:hover{
+    transform: scale(1.1);
+}
+
+
+/* ************** */
+/*Contact*/
+/* **************** */
+
+.contact{ 
+    display: flex;
+    flex-wrap: wrap;
+    width: 80.9rem;
+    height: 100vh;
+    display: flex;
+    position:fixed;
+}
+.Contact-content{ 
+    
+    padding: 10px 20px;
+    padding-top: 40px;
+    width: 100%;
+    background-color: #000;
+    font-family: 'Baloo Paaji 2', cursive;
+
+}
+.Contact-content h1{
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 3rem;
+}
+.Contact-content h1::before{
+    content: "";
+    position: absolute;
+    top:63px;
+    left: 20px;
+    width: 50px;
+    height: 20px;
+    border-bottom: 5px solid red;
+}
+.Contact-content h1::after{
+    content: "";
+    position: absolute;
+    top:70px;
+    left: 20px;
+    width: 30px;
+    height: 20px;
+    border-bottom: 5px solid red;
+}
+.Contact-content .contactContainer{
+    position: relative;
+    width: 78rem;
+    margin: auto;
+    /* background-color:bisque ; */
+}
+.Contact-content .contactContainer .greeting{
+    position: relative;
+    margin: auto;
+    width: 70rem;
+    text-align: center;
+    /* background-color: aqua; */
+    margin-bottom: 1.8rem;
+}
+.Contact-content .contactContainer .greeting .greetingContent h2{
+    color: red;
+    margin-bottom: 0.6rem;
+}
+.Contact-content .contactContainer .greeting .greetingContent p{
+    color: white;
+}
+.Contact-content .contactContainer .typesToInform{
+    position: relative;
+    width: 70rem;
+    margin: auto;
+    padding: 8px 8px;
+    /* background-color: chartreuse; */
+    margin-bottom: 2.5rem;
+}
+.Contact-content .contactContainer .typesToInform .typesToInformContent{
+    display: flex;
+    justify-content: space-around;
+}
+.typesToInform .typesToInformContent .call,
+.typesToInform .typesToInformContent .location,
+.typesToInform .typesToInformContent .email,
+.typesToInform .typesToInformContent .website{
+    width: 15rem;
+    text-align: center;
+    color: #ffffff;
+}
+.icon{
+    font-size: 1.7rem;
+    color: red;
+}
+.typesToInform .typesToInformContent .call h3,
+.typesToInform .typesToInformContent .location h3,
+.typesToInform .typesToInformContent .email h3,
+.typesToInform .typesToInformContent .website h3{
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+.typesToInform .typesToInformContent .call p,
+.typesToInform .typesToInformContent .location p,
+.typesToInform .typesToInformContent .email p,
+.typesToInform .typesToInformContent .website p{
+    color: rgb(248, 233, 233);
+}
+
+.Contact-content .contactContainer .form{
+    width: 70rem;
+    /* background-color: pink; */
+    margin: auto;
+}
+.Contact-content .contactContainer .form .formInnerBox{
+    display: block;
+    /* background-color: darkgoldenrod; */
+}
+.Contact-content .contactContainer .form .formInnerBox .message{
+    text-align: center;
+}
+.Contact-content .contactContainer .form .formInnerBox .message h3{
+    color: red;
+    font-size: 1.6rem;
+    margin-bottom: 1.1rem;
+}
+.Contact-content .contactContainer .form .formInnerBox .message p{
+    font-size: 1rem;
+    margin-bottom: 1.8rem;
+    color: #ffffff;
+}
+.Contact-content .contactContainer .form .formInnerBox .formContent{
+    width: 70rem;
+    padding: 10px 20px;
+}
+.Contact-content .contactContainer .form .formInnerBox .formContent #Name{
+    margin-right: 2rem;
+}
+.Contact-content .contactContainer .form .formInnerBox .formContent #Name,
+.Contact-content .contactContainer .form .formInnerBox .formContent #Email{
+    width: 32rem;
+    padding: 4px 17px;
+    height: 3rem;
+    font: bolder;
+    font-size: 1.1rem;
+    color: #ffffff;
+    border-radius: 18px;
+    margin-bottom: 1.6rem;
+    background-color: rgb(68, 68, 68);
+    border: 1px solid black;
+}
+.Contact-content .contactContainer .form .formInnerBox .formContent #Subject{
+    width: 66.5rem;
+    height: 3rem;
+    font: bolder;
+    font-size: 1.1rem;
+    color: #ffffff;
+    border-radius: 18px;
+    padding: 4px 20px;
+    margin-bottom: 1.6rem;
+    background-color: rgb(68, 68, 68);
+    border: 1px solid black;
+    
+
+}
+.Contact-content .contactContainer .form .formInnerBox .formContent textarea{
+    width: 66.5rem;
+    max-width: 66.5rem;
+    border-radius: 18px;
+    padding: 4px 17px;
+    font-size: 1.1rem;
+    color: #ffffff;
+    font: bolder;
+    background-color: rgb(68, 68, 68);
+    border: 1px solid black;
+    margin-bottom: 2.5rem;
+}
+.Contact-content .contactContainer .form .formInnerBox .formContent #Send{
+    background-color: red;
+    color: white;
+    width: 10rem;
+    font-size: 1rem;
+    padding: 6px 18px;
+    border-radius: 12px;
+}
+.Contact-content .contactContainer .form .formInnerBox .formContent #Send:hover{
+    transform: scale(1.1);
+}
+
